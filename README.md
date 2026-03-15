@@ -1,52 +1,52 @@
 # 📊 github-stats-card
 
-Generate beautiful SVG cards with your GitHub profile stats. Use them in your README, portfolio, or anywhere that renders images.
+Gera cards SVG bonitões com as estatísticas do seu perfil no GitHub. Use no seu README, portfólio ou em qualquer lugar que renderize imagens.
 
 <p align="center">
-  <img src="assets/preview-dark.svg" width="420" alt="Dark theme preview"/>
+  <img src="assets/preview-dark.svg" width="420" alt="Preview tema escuro"/>
 </p>
 
-## Features
+## Funcionalidades
 
-- **5 themes** — Dark, Light, Dracula, Nord, Sunset
-- **Top languages** — auto-detected from your repos
-- **Zero dependencies** — just TypeScript + the GitHub API
-- **Animated** — subtle fade-in animations on load
-- **CLI included** — generate cards from the terminal
+- **5 temas** — Escuro, Claro, Dracula, Nord, Sunset
+- **Top linguagens** — detectadas automaticamente dos seus repositórios
+- **Zero dependências** — só TypeScript + a API do GitHub
+- **Animado** — animações sutis de fade-in ao carregar
+- **CLI incluso** — gera cards direto pelo terminal
 
-## Quick Start
+## Início Rápido
 
 ```bash
-# clone the repo
-git clone https://github.com/YOUR_USERNAME/github-stats-card.git
+# clone o repo
+git clone https://github.com/PedroHFerraz/github-stats-card.git
 cd github-stats-card
 
-# install deps
+# instale as dependências
 npm install
 
-# generate a card
+# gere um card
 npx ts-node src/cli.ts torvalds --theme dracula
 ```
 
-This creates `torvalds-stats.svg` in the current directory.
+Isso cria o arquivo `torvalds-stats.svg` na pasta atual.
 
-## Usage
+## Como Usar
 
-### CLI
+### Pelo Terminal (CLI)
 
 ```bash
-npx ts-node src/cli.ts <username> [options]
+npx ts-node src/cli.ts <usuario> [opções]
 ```
 
-| Option | Description | Default |
+| Opção | Descrição | Padrão |
 |---|---|---|
-| `--theme <name>` | `dark` `light` `dracula` `nord` `sunset` | `dark` |
-| `--no-langs` | Hide the languages bar | — |
-| `--no-border` | Remove the card border | — |
-| `--width <px>` | Card width in pixels | `420` |
-| `--output <file>` | Output file path | `<username>-stats.svg` |
+| `--theme <nome>` | `dark` `light` `dracula` `nord` `sunset` | `dark` |
+| `--no-langs` | Esconde a barra de linguagens | — |
+| `--no-border` | Remove a borda do card | — |
+| `--width <px>` | Largura do card em pixels | `420` |
+| `--output <arquivo>` | Caminho do arquivo de saída | `<usuario>-stats.svg` |
 
-### As a module
+### Como módulo
 
 ```typescript
 import { fetchUserStats, renderCard } from "./src";
@@ -58,23 +58,23 @@ const svg = renderCard(stats, {
   showLanguages: true,
 });
 
-// svg is a string — write it to a file, serve it, embed it, etc.
+// svg é uma string — salve num arquivo, sirva numa API, incorpore onde quiser
 ```
 
-### In your README
+### No seu README
 
-After generating your card, add it to your repo and reference it:
+Depois de gerar seu card, adicione ao repositório e referencie assim:
 
 ```markdown
-![My GitHub Stats](./my-stats.svg)
+![Minhas Stats do GitHub](./meu-card.svg)
 ```
 
-## Themes
+## Temas
 
 <table>
   <tr>
-    <td align="center"><strong>Dark</strong><br/><img src="assets/preview-dark.svg" width="380"/></td>
-    <td align="center"><strong>Light</strong><br/><img src="assets/preview-light.svg" width="380"/></td>
+    <td align="center"><strong>Escuro</strong><br/><img src="assets/preview-dark.svg" width="380"/></td>
+    <td align="center"><strong>Claro</strong><br/><img src="assets/preview-light.svg" width="380"/></td>
   </tr>
   <tr>
     <td align="center"><strong>Dracula</strong><br/><img src="assets/preview-dracula.svg" width="380"/></td>
@@ -85,27 +85,27 @@ After generating your card, add it to your repo and reference it:
   </tr>
 </table>
 
-## Rate Limits
+## Limites da API
 
-The GitHub API allows 60 requests/hour without auth. For higher limits, create a [personal access token](https://github.com/settings/tokens) (no scopes needed) and set it:
+A API do GitHub permite 60 requisições por hora sem autenticação. Para aumentar esse limite, crie um [token pessoal](https://github.com/settings/tokens) (não precisa de nenhum escopo) e configure:
 
 ```bash
-export GITHUB_TOKEN=ghp_your_token_here
+export GITHUB_TOKEN=ghp_seu_token_aqui
 ```
 
-## Project Structure
+## Estrutura do Projeto
 
 ```
 src/
-├── card.ts       # SVG renderer
-├── cli.ts        # CLI entry point
-├── fetcher.ts    # GitHub API client
-├── index.ts      # Public exports
-├── preview.ts    # Preview generator
-├── themes.ts     # Theme definitions + language colors
-└── types.ts      # TypeScript types
+├── card.ts       # Renderizador SVG
+├── cli.ts        # Entrada do CLI
+├── fetcher.ts    # Cliente da API do GitHub
+├── index.ts      # Exports públicos
+├── preview.ts    # Gerador de previews
+├── themes.ts     # Definições de temas + cores das linguagens
+└── types.ts      # Tipos TypeScript
 ```
 
-## License
+## Licença
 
 MIT
