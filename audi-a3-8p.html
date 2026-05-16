@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audi A3 8P — Painel de Instrumentos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: radial-gradient(ellipse at center, #1a1a2e 0%, #0a0a0a 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      user-select: none;
+    }
+    #c { display: block; }
+    .controls {
+      margin-top: 28px;
+      display: flex;
+      gap: 50px;
+      align-items: center;
+    }
+    .ctrl-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .ctrl-group label {
+      color: #bbb;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .ctrl-group span {
+      color: #ff9900;
+      font-size: 18px;
+      font-weight: bold;
+      min-width: 80px;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+    }
+    input[type=range] {
+      width: 240px;
+      accent-color: #cc3300;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="controls">
+  <div class="ctrl-group">
+    <label>VELOCIDADE</label>
+    <span id="sv">0 km/h</span>
+    <input id="ss" type="range" min="0" max="240" value="0" step="1">
+  </div>
+  <div class="ctrl-group">
+    <label>ROTAÇÃO</label>
+    <span id="rv">0 rpm</span>
+    <input id="rs" type="range" min="0" max="7000" value="0" step="100">
+  </div>
+</div>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+
+// Responsive sizing
+const SCALE = Math.min(1.2, window.innerWidth / 1050);
+const W = Math.round(1050 * SCALE);
+const H = Math.round(440 * SCALE);
+canvas.width = W;
+canvas.height = H;
+ctx.scale(SCALE, SCALE);
+const UW = 1050, UH = 440;
+
+let speed = 0, rpm = 0;
+const fuel = 0.62;
+const temp = 0.52;
+
+// Gauge geometry: angles measured from 12-o'clock, clockwise (degrees)
+const G_START = 228;
+const G_SWEEP = 264;
+
+function toRad(deg) { return (deg - 90) * Math.PI / 180; }
+
+function valToAngleDeg(val, min, max) {
+  const t = Math.max(0, Math.min(1, (val - min) / (max - min)));
+  return G_START + G_SWEEP * t;
+}
+
+// ── Rounded rect helper ──────────────────────────────────────────────────────
+function rrect(x, y, w, h, r) {
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.arcTo(x + w, y, x + w, y + r, r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+  ctx.lineTo(x + r, y + h);
+  ctx.arcTo(x, y + h, x, y + h - r, r);
+  ctx.lineTo(x, y + r);
+  ctx.arcTo(x, y, x + r, y, r);
+  ctx.closePath();
+}
+
+// ── Cluster housing ──────────────────────────────────────────────────────────
+function drawHousing() {
+  const g = ctx.createLinearGradient(0, 0, 0, UH);
+  g.addColorStop(0, '#252525');
+  g.addColorStop(0.45, '#161616');
+  g.addColorStop(1, '#080808');
+  rrect(18, 16, UW - 36, UH - 32, 22);
+  ctx.fillStyle = g;
+  ctx.fill();
+  ctx.strokeStyle = '#3a3a3a';
+  ctx.lineWidth = 2;
+  rrect(18, 16, UW - 36, UH - 32, 22);
+  ctx.stroke();
+
+  // Inner shadow / depth ring
+  ctx.save();
+  ctx.shadowColor = 'rgba(0,0,0,0.8)';
+  ctx.shadowBlur = 25;
+  ctx.shadowInset = true;
+  rrect(22, 20, UW - 44, UH - 40, 20);
+  ctx.strokeStyle = 'rgba(0,0,0,0.4)';
+  ctx.lineWidth = 8;
+  ctx.stroke();
+  ctx.restore();
+}
+
+// ── Main circular gauge ──────────────────────────────────────────────────────
+function drawMainGauge(cx, cy, R, { min, max, value,
+  majorStep, minorStep, labelStep, labelFn, unit, redStart }) {
+
+  // Chrome bezel
+  const bev = ctx.createRadialGradient(cx - R*0.25, cy - R*0.25, R*0.55, cx, cy, R);
+  bev.addColorStop(0, '#d8d8d8');
+  bev.addColorStop(0.35, '#909090');
+  bev.addColorStop(0.7, '#585858');
+  bev.addColorStop(1, '#2a2a2a');
+  ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI*2);
+  ctx.fillStyle = bev; ctx.fill();
+
+  // Chrome highlight arc (top-left shine)
+  ctx.save();
+  ctx.beginPath(); ctx.arc(cx, cy, R * 0.97, toRad(200), toRad(310));
+  ctx.lineWidth = R * 0.025;
+  ctx.strokeStyle = 'rgba(255,255,255,0.25)';
+  ctx.stroke();
+  ctx.restore();
+
+  // Inner face — very dark charcoal
+  const faceR = R * 0.915;
+  const faceG = ctx.createRadialGradient(cx, cy - R*0.1, 0, cx, cy, faceR);
+  faceG.addColorStop(0, '#181818');
+  faceG.addColorStop(1, '#0c0c0c');
+  ctx.beginPath(); ctx.arc(cx, cy, faceR, 0, Math.PI*2);
+  ctx.fillStyle = faceG; ctx.fill();
+
+  // Subtle concentric ring decoration on face
+  ctx.beginPath(); ctx.arc(cx, cy, R * 0.89, 0, Math.PI*2);
+  ctx.strokeStyle = 'rgba(255,255,255,0.04)'; ctx.lineWidth = 1; ctx.stroke();
+  ctx.beginPath(); ctx.arc(cx, cy, R * 0.75, 0, Math.PI*2);
+  ctx.strokeStyle = 'rgba(255,255,255,0.03)'; ctx.lineWidth = 1; ctx.stroke();
+
+  // Red zone background arc
+  if (redStart !== undefined) {
+    const rzA = toRad(valToAngleDeg(redStart, min, max));
+    const endA = toRad(G_START + G_SWEEP);
+    ctx.beginPath();
+    ctx.arc(cx, cy, R * 0.81, rzA, endA);
+    ctx.lineWidth = R * 0.075;
+    ctx.strokeStyle = '#991100';
+    ctx.lineCap = 'butt';
+    ctx.stroke();
+    // Bright red line over it
+    ctx.beginPath();
+    ctx.arc(cx, cy, R * 0.81, rzA, endA);
+    ctx.lineWidth = R * 0.04;
+    ctx.strokeStyle = '#ee2200';
+    ctx.stroke();
+  }
+
+  // Tick marks
+  ctx.lineCap = 'round';
+  for (let v = min; v <= max + 1e-9; v += minorStep) {
+    if (v > max) v = max;
+    const isMajor = (Math.round((v - min) / majorStep) * majorStep + min - v) < minorStep * 0.05;
+    const angle = toRad(valToAngleDeg(v, min, max));
+    const outerR = R * 0.875;
+    const innerR = isMajor ? R * 0.735 : R * 0.815;
+    const isRed = redStart !== undefined && v >= redStart - 1e-6;
+
+    ctx.beginPath();
+    ctx.moveTo(cx + Math.cos(angle)*innerR, cy + Math.sin(angle)*innerR);
+    ctx.lineTo(cx + Math.cos(angle)*outerR, cy + Math.sin(angle)*outerR);
+    ctx.lineWidth = isMajor ? 2.8 : 1.5;
+    ctx.strokeStyle = isRed ? '#ff4422' : '#e8e8e8';
+    ctx.stroke();
+  }
+
+  // Numbers
+  const fontSize = R * 0.148;
+  ctx.font = `bold ${fontSize}px 'Arial Narrow', Arial, sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  for (let v = min; v <= max + 1e-9; v += labelStep) {
+    if (v > max) v = max;
+    const angle = toRad(valToAngleDeg(v, min, max));
+    const tr = R * 0.575;
+    const isRed = redStart !== undefined && v >= redStart - 1e-6;
+    ctx.fillStyle = isRed ? '#ff5533' : '#f0f0f0';
+    ctx.fillText(labelFn(v), cx + Math.cos(angle)*tr, cy + Math.sin(angle)*tr);
+  }
+
+  // Unit label
+  if (unit) {
+    ctx.font = `${R * 0.105}px Arial, sans-serif`;
+    ctx.fillStyle = '#999999';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(unit, cx, cy + R * 0.40);
+  }
+
+  // Needle
+  const na = toRad(valToAngleDeg(value, min, max));
+  const nLen = R * 0.77;
+  const nBack = R * 0.19;
+  const nW = 3.8;
+
+  ctx.save();
+  ctx.shadowColor = 'rgba(0,0,0,0.75)';
+  ctx.shadowBlur = 12;
+
+  // Needle body
+  ctx.beginPath();
+  ctx.moveTo(cx + Math.cos(na + Math.PI/2)*nW, cy + Math.sin(na + Math.PI/2)*nW);
+  ctx.lineTo(cx + Math.cos(na)*nLen,            cy + Math.sin(na)*nLen);
+  ctx.lineTo(cx + Math.cos(na - Math.PI/2)*nW, cy + Math.sin(na - Math.PI/2)*nW);
+  ctx.lineTo(cx + Math.cos(na + Math.PI)*nBack, cy + Math.sin(na + Math.PI)*nBack);
+  ctx.closePath();
+  const needleG = ctx.createLinearGradient(
+    cx + Math.cos(na + Math.PI/2)*nW, cy + Math.sin(na + Math.PI/2)*nW,
+    cx + Math.cos(na - Math.PI/2)*nW, cy + Math.sin(na - Math.PI/2)*nW);
+  needleG.addColorStop(0, '#ffffff');
+  needleG.addColorStop(0.5, '#d8d8d8');
+  needleG.addColorStop(1, '#aaaaaa');
+  ctx.fillStyle = needleG;
+  ctx.fill();
+  ctx.restore();
+
+  // Center cap
+  const capR = 11;
+  const capG = ctx.createRadialGradient(cx - 3, cy - 3, 1, cx, cy, capR);
+  capG.addColorStop(0, '#c0c0c0');
+  capG.addColorStop(0.5, '#686868');
+  capG.addColorStop(1, '#202020');
+  ctx.beginPath(); ctx.arc(cx, cy, capR, 0, Math.PI*2);
+  ctx.fillStyle = capG; ctx.fill();
+  ctx.beginPath(); ctx.arc(cx, cy, capR, 0, Math.PI*2);
+  ctx.strokeStyle = '#888'; ctx.lineWidth = 1; ctx.stroke();
+  ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI*2);
+  ctx.fillStyle = '#333'; ctx.fill();
+}
+
+// ── Small side gauge (temp / fuel) ───────────────────────────────────────────
+function drawSideGauge(cx, cy, R, value, { isTemp }) {
+  // Chrome ring
+  const bev = ctx.createRadialGradient(cx - R*0.2, cy - R*0.2, R*0.4, cx, cy, R);
+  bev.addColorStop(0, '#c0c0c0');
+  bev.addColorStop(0.5, '#808080');
+  bev.addColorStop(1, '#3a3a3a');
+  ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI*2);
+  ctx.fillStyle = bev; ctx.fill();
+
+  // Face
+  ctx.beginPath(); ctx.arc(cx, cy, R * 0.88, 0, Math.PI*2);
+  ctx.fillStyle = '#0d0d0d'; ctx.fill();
+
+  const sa = G_START, sw = G_SWEEP;
+
+  // Colored zone arcs
+  ctx.lineCap = 'round';
+  if (isTemp) {
+    // Blue (cold) at start
+    ctx.beginPath();
+    ctx.arc(cx, cy, R*0.72, toRad(sa), toRad(sa + sw*0.28));
+    ctx.lineWidth = R*0.11; ctx.strokeStyle = '#1133cc'; ctx.stroke();
+    // Red (hot) at end
+    ctx.beginPath();
+    ctx.arc(cx, cy, R*0.72, toRad(sa + sw*0.72), toRad(sa + sw));
+    ctx.lineWidth = R*0.11; ctx.strokeStyle = '#cc1100'; ctx.stroke();
+  } else {
+    // Red (empty) at start
+    ctx.beginPath();
+    ctx.arc(cx, cy, R*0.72, toRad(sa), toRad(sa + sw*0.22));
+    ctx.lineWidth = R*0.11; ctx.strokeStyle = '#cc1100'; ctx.stroke();
+  }
+
+  // Ticks
+  for (let i = 0; i <= 8; i++) {
+    const t = i / 8;
+    const angle = toRad(sa + sw * t);
+    const major = i % 4 === 0;
+    ctx.beginPath();
+    ctx.moveTo(cx + Math.cos(angle)*R*(major ? 0.67 : 0.74),
+               cy + Math.sin(angle)*R*(major ? 0.67 : 0.74));
+    ctx.lineTo(cx + Math.cos(angle)*R*0.83,
+               cy + Math.sin(angle)*R*0.83);
+    ctx.lineWidth = major ? 2 : 1.2;
+    ctx.strokeStyle = '#dddddd';
+    ctx.lineCap = 'round';
+    ctx.stroke();
+  }
+
+  // E/F or snowflake/thermometer icons
+  ctx.font = `bold ${R*0.26}px Arial`;
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  if (!isTemp) {
+    const eA = toRad(sa + sw*0.06);
+    const fA = toRad(sa + sw*0.94);
+    ctx.fillStyle = '#cc3311';
+    ctx.fillText('E', cx + Math.cos(eA)*R*0.48, cy + Math.sin(eA)*R*0.48);
+    ctx.fillStyle = '#cccccc';
+    ctx.fillText('F', cx + Math.cos(fA)*R*0.48, cy + Math.sin(fA)*R*0.48);
+  } else {
+    ctx.font = `${R*0.26}px Arial`;
+    const cA = toRad(sa + sw*0.06);
+    const hA = toRad(sa + sw*0.94);
+    ctx.fillStyle = '#4466ff';
+    ctx.fillText('☃', cx + Math.cos(cA)*R*0.48, cy + Math.sin(cA)*R*0.48);
+    ctx.fillStyle = '#ff3311';
+    ctx.fillText('☀', cx + Math.cos(hA)*R*0.48, cy + Math.sin(hA)*R*0.48);
+  }
+
+  // Label below center
+  ctx.font = `${R*0.19}px Arial`; ctx.fillStyle = '#777777';
+  ctx.fillText(isTemp ? 'TEMP' : 'FUEL', cx, cy + R*0.38);
+
+  // Needle
+  const na = toRad(sa + sw * Math.max(0, Math.min(1, value)));
+  ctx.beginPath();
+  ctx.moveTo(cx + Math.cos(na + Math.PI/2)*2.2, cy + Math.sin(na + Math.PI/2)*2.2);
+  ctx.lineTo(cx + Math.cos(na)*R*0.70,           cy + Math.sin(na)*R*0.70);
+  ctx.lineTo(cx + Math.cos(na - Math.PI/2)*2.2, cy + Math.sin(na - Math.PI/2)*2.2);
+  ctx.lineTo(cx + Math.cos(na + Math.PI)*R*0.16, cy + Math.sin(na + Math.PI)*R*0.16);
+  ctx.closePath();
+  ctx.fillStyle = '#e8e8e8'; ctx.fill();
+
+  // Cap
+  const capG = ctx.createRadialGradient(cx-2, cy-2, 0, cx, cy, 7);
+  capG.addColorStop(0, '#aaa'); capG.addColorStop(1, '#333');
+  ctx.beginPath(); ctx.arc(cx, cy, 6.5, 0, Math.PI*2);
+  ctx.fillStyle = capG; ctx.fill();
+}
+
+// ── Audi four rings ──────────────────────────────────────────────────────────
+function drawAudiRings(cx, cy) {
+  const r = 10.5, gap = r * 1.55;
+  const offsets = [-1.5, -0.5, 0.5, 1.5];
+  ctx.save();
+  ctx.globalAlpha = 0.22;
+  for (const o of offsets) {
+    ctx.beginPath();
+    ctx.arc(cx + o * gap, cy, r, 0, Math.PI*2);
+    ctx.strokeStyle = '#cccccc';
+    ctx.lineWidth = 2.5;
+    ctx.stroke();
+  }
+  ctx.restore();
+}
+
+// ── Odometer LCD display ─────────────────────────────────────────────────────
+function drawOdometer(cx, cy) {
+  const w = 144, h = 30, r = 5;
+  rrect(cx - w/2, cy - h/2, w, h, r);
+  ctx.fillStyle = '#080f08'; ctx.fill();
+  ctx.strokeStyle = '#2a3a2a'; ctx.lineWidth = 1.5;
+  rrect(cx - w/2, cy - h/2, w, h, r);
+  ctx.stroke();
+
+  // Segment display dots texture (subtle)
+  ctx.fillStyle = '#0e1a0e';
+  for (let dx = -60; dx <= 60; dx += 4) {
+    for (let dy = -10; dy <= 10; dy += 4) {
+      ctx.beginPath();
+      ctx.arc(cx + dx, cy + dy, 0.6, 0, Math.PI*2);
+      ctx.fill();
+    }
+  }
+
+  ctx.font = 'bold 14px "Courier New", monospace';
+  ctx.fillStyle = '#ff8800';
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.shadowColor = 'rgba(255,140,0,0.6)'; ctx.shadowBlur = 6;
+  ctx.fillText('123456  km', cx, cy);
+  ctx.shadowBlur = 0;
+}
+
+// ── Warning / indicator lights ───────────────────────────────────────────────
+function drawWarningLights(cx, cy) {
+  const items = [
+    { dx: -82, color: '#ff6600', on: false, label: 'BATT' },
+    { dx: -44, color: '#ff3300', on: false, label: 'OIL'  },
+    { dx:   0, color: '#ffcc00', on: false, label: 'ENG'  },
+    { dx:  44, color: '#00cc44', on: true,  label: '►'   },
+    { dx:  82, color: '#0077ff', on: false, label: 'ABS'  },
+  ];
+
+  ctx.font = 'bold 9px Arial';
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+
+  for (const it of items) {
+    const x = cx + it.dx;
+    // Indicator dot
+    ctx.beginPath(); ctx.arc(x, cy - 5, 5, 0, Math.PI*2);
+    if (it.on) {
+      ctx.fillStyle = it.color;
+      ctx.shadowColor = it.color; ctx.shadowBlur = 10;
+    } else {
+      ctx.fillStyle = '#1f1f1f';
+      ctx.shadowBlur = 0;
+    }
+    ctx.fill();
+    ctx.shadowBlur = 0;
+    // Label
+    ctx.fillStyle = it.on ? it.color : '#333333';
+    ctx.fillText(it.label, x, cy + 6);
+  }
+}
+
+// ── Illumination glow behind gauge faces ─────────────────────────────────────
+function drawGaugeGlow(cx, cy, R) {
+  const g = ctx.createRadialGradient(cx, cy, R*0.3, cx, cy, R*0.92);
+  g.addColorStop(0, 'rgba(30,50,80,0.18)');
+  g.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.beginPath(); ctx.arc(cx, cy, R*0.92, 0, Math.PI*2);
+  ctx.fillStyle = g; ctx.fill();
+}
+
+// ── Glass reflection overlay ─────────────────────────────────────────────────
+function drawGlassReflection(cx, cy, R) {
+  ctx.save();
+  ctx.beginPath(); ctx.arc(cx, cy, R * 0.915, 0, Math.PI*2);
+  ctx.clip();
+  const g = ctx.createLinearGradient(cx - R, cy - R, cx + R*0.3, cy + R*0.5);
+  g.addColorStop(0, 'rgba(255,255,255,0.06)');
+  g.addColorStop(0.4, 'rgba(255,255,255,0.03)');
+  g.addColorStop(1, 'rgba(255,255,255,0)');
+  ctx.fillStyle = g; ctx.fillRect(cx - R, cy - R, R*2, R*2);
+  ctx.restore();
+}
+
+// ── Speed digital readout on speedometer ─────────────────────────────────────
+function drawSpeedReadout(cx, cy, R) {
+  const txt = String(Math.round(speed)).padStart(3, ' ');
+  const w = 68, h = 22, r = 4;
+  const bx = cx - w/2, by = cy + R*0.56 - h/2;
+  rrect(bx, by, w, h, r);
+  ctx.fillStyle = '#060e06'; ctx.fill();
+  ctx.strokeStyle = '#222'; ctx.lineWidth = 1;
+  rrect(bx, by, w, h, r);
+  ctx.stroke();
+  ctx.font = 'bold 13px "Courier New", monospace';
+  ctx.fillStyle = '#ffaa00';
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.shadowColor = 'rgba(255,170,0,0.5)'; ctx.shadowBlur = 5;
+  ctx.fillText(txt, cx, by + h/2);
+  ctx.shadowBlur = 0;
+}
+
+// ── Main render ───────────────────────────────────────────────────────────────
+function draw() {
+  ctx.clearRect(0, 0, UW, UH);
+  ctx.fillStyle = '#080808';
+  ctx.fillRect(0, 0, UW, UH);
+
+  drawHousing();
+
+  const tachX = 308, spdX = 742, gCY = 213, gR = 162;
+  const sideR = 54;
+  const tempX = 105, fuelX = 945, sideCY = 285;
+  const midX = UW / 2;
+
+  // Glow effect behind gauges
+  drawGaugeGlow(tachX, gCY, gR);
+  drawGaugeGlow(spdX, gCY, gR);
+
+  // Tachometer — 0..7 (×1000 rpm), redline from 6.5
+  drawMainGauge(tachX, gCY, gR, {
+    min: 0, max: 7, value: rpm / 1000,
+    majorStep: 1, minorStep: 0.2,
+    labelStep: 1,
+    labelFn: v => String(Math.round(v)),
+    unit: '×1000 /min',
+    redStart: 6.5,
+  });
+
+  // Speedometer — 0..240 km/h
+  drawMainGauge(spdX, gCY, gR, {
+    min: 0, max: 240, value: speed,
+    majorStep: 20, minorStep: 10,
+    labelStep: 20,
+    labelFn: v => String(Math.round(v)),
+    unit: 'km/h',
+    redStart: undefined,
+  });
+
+  // Glass reflections on main gauges
+  drawGlassReflection(tachX, gCY, gR);
+  drawGlassReflection(spdX, gCY, gR);
+
+  // Side gauges
+  drawSideGauge(tempX, sideCY, sideR, temp, { isTemp: true });
+  drawSideGauge(fuelX, sideCY, sideR, fuel, { isTemp: false });
+  drawGlassReflection(tempX, sideCY, sideR);
+  drawGlassReflection(fuelX, sideCY, sideR);
+
+  // Center panel
+  drawWarningLights(midX, 108);
+  drawAudiRings(midX, 175);
+  drawOdometer(midX, 225);
+
+  // Speed digital on speedo face
+  drawSpeedReadout(spdX, gCY, gR);
+
+  // "rpm" label near tachometer needle area
+  const rpmDisplay = Math.round(rpm);
+  const rW = 72, rH = 22, rr = 4;
+  rrect(tachX - rW/2, gCY + gR*0.56 - rH/2, rW, rH, rr);
+  ctx.fillStyle = '#060e06'; ctx.fill();
+  ctx.strokeStyle = '#222'; ctx.lineWidth = 1;
+  rrect(tachX - rW/2, gCY + gR*0.56 - rH/2, rW, rH, rr);
+  ctx.stroke();
+  ctx.font = 'bold 13px "Courier New", monospace';
+  ctx.fillStyle = '#ffaa00';
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.shadowColor = 'rgba(255,170,0,0.5)'; ctx.shadowBlur = 5;
+  ctx.fillText(rpmDisplay, tachX, gCY + gR*0.56);
+  ctx.shadowBlur = 0;
+}
+
+// ── Controls ──────────────────────────────────────────────────────────────────
+document.getElementById('ss').addEventListener('input', function() {
+  speed = +this.value;
+  document.getElementById('sv').textContent = Math.round(speed) + ' km/h';
+  draw();
+});
+document.getElementById('rs').addEventListener('input', function() {
+  rpm = +this.value;
+  document.getElementById('rv').textContent = rpm + ' rpm';
+  draw();
+});
+
+draw();
+</script>
+</body>
+</html>
