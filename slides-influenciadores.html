@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Influenciadores Digitais e Dominação Carismática</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@700&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --azul:    #1a1f3c;
+      --acento:  #e8a020;
+      --claro:   #f5f0e8;
+      --branco:  #ffffff;
+      --cinza:   #8892a4;
+      --card:    rgba(255,255,255,0.06);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--azul);
+      color: var(--branco);
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* ── NAVEGAÇÃO ── */
+    #nav {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 100;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 40px;
+      padding: 10px 20px;
+    }
+    #nav button {
+      background: transparent;
+      border: none;
+      color: var(--branco);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: 20px;
+      transition: background .2s;
+    }
+    #nav button:hover { background: rgba(255,255,255,0.15); }
+    #contador {
+      color: var(--acento);
+      font-weight: 700;
+      font-size: 14px;
+      align-self: center;
+      min-width: 52px;
+      text-align: center;
+    }
+
+    /* ── SLIDE BASE ── */
+    .slide {
+      display: none;
+      position: absolute;
+      inset: 0;
+      padding: 60px 80px 100px;
+      flex-direction: column;
+      justify-content: center;
+      animation: fadeIn .4s ease;
+    }
+    .slide.ativo { display: flex; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── TIPOGRAFIA ── */
+    .tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--acento);
+      margin-bottom: 14px;
+    }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px,4.5vw,62px); line-height: 1.1; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(24px,3vw,42px); margin-bottom: 32px; line-height: 1.2; }
+    h3 { font-size: 18px; font-weight: 700; color: var(--acento); margin-bottom: 8px; }
+    p  { font-size: clamp(13px,1.4vw,17px); line-height: 1.7; color: rgba(255,255,255,.85); }
+    .destaque { color: var(--acento); font-weight: 700; }
+
+    /* ── CARDS ── */
+    .cards { display: grid; gap: 18px; }
+    .cards.col2 { grid-template-columns: 1fr 1fr; }
+    .cards.col3 { grid-template-columns: 1fr 1fr 1fr; }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .card .numero {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--acento);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    /* ── LINHA DIVISÓRIA ── */
+    hr.ouro { border: none; border-top: 2px solid var(--acento); width: 60px; margin: 18px 0; }
+
+    /* ── SLIDE 1 — CAPA ── */
+    #s1 {
+      background: linear-gradient(135deg, #0d1120 0%, #1a1f3c 50%, #0d1120 100%);
+      justify-content: center;
+      align-items: flex-start;
+    }
+    #s1 .linha-ouro {
+      width: 80px; height: 4px;
+      background: var(--acento);
+      margin-bottom: 28px;
+      border-radius: 2px;
+    }
+    #s1 .subtitulo {
+      font-size: clamp(14px,1.8vw,20px);
+      color: rgba(255,255,255,.65);
+      margin-top: 18px;
+      max-width: 560px;
+      line-height: 1.6;
+    }
+    #s1 .meta {
+      position: absolute;
+      bottom: 110px;
+      left: 80px;
+      display: flex;
+      gap: 40px;
+    }
+    #s1 .meta-item label {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--acento);
+      margin-bottom: 4px;
+    }
+    #s1 .meta-item span { font-size: 14px; color: rgba(255,255,255,.8); }
+    #s1 .bg-img {
+      position: absolute;
+      right: 0; top: 0; bottom: 0;
+      width: 42%;
+      object-fit: cover;
+      opacity: .18;
+      filter: grayscale(30%);
+    }
+
+    /* ── SLIDE 2 — WEBER ── */
+    #s2 .layout { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: start; }
+    #s2 img {
+      width: 100%;
+      border-radius: 12px;
+      border: 3px solid var(--acento);
+      filter: sepia(30%) contrast(1.1);
+    }
+    #s2 ul { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+    #s2 ul li {
+      padding-left: 18px;
+      border-left: 3px solid var(--acento);
+      font-size: clamp(13px,1.3vw,16px);
+      color: rgba(255,255,255,.85);
+      line-height: 1.6;
+    }
+
+    /* ── SLIDE 3 — 3 TIPOS ── */
+    #s3 .tipos { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 8px; }
+    #s3 .tipo {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px 22px;
+      border-top: 4px solid transparent;
+      transition: transform .2s;
+    }
+    #s3 .tipo.t1 { border-top-color: #6b8cce; }
+    #s3 .tipo.t2 { border-top-color: #52b07a; }
+    #s3 .tipo.t3 { border-top-color: var(--acento); }
+    #s3 .tipo h3 { font-size: 16px; margin-bottom: 10px; }
+    #s3 .tipo.t1 h3 { color: #6b8cce; }
+    #s3 .tipo.t2 h3 { color: #52b07a; }
+    #s3 .tipo.t3 h3 { color: var(--acento); }
+    #s3 .tipo p { font-size: 14px; line-height: 1.6; color: rgba(255,255,255,.8); }
+
+    /* ── SLIDE 4 — DOMINAÇÃO CARISMÁTICA ── */
+    #s4 .pilares { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 4px; }
+    #s4 .pilar {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 22px;
+      border-left: 4px solid var(--acento);
+    }
+    #s4 .pilar h3 { font-size: 15px; margin-bottom: 6px; }
+    #s4 .pilar p  { font-size: 13px; line-height: 1.65; color: rgba(255,255,255,.8); }
+    #s4 .citacao {
+      background: rgba(232,160,32,.1);
+      border-left: 4px solid var(--acento);
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin-top: 20px;
+      font-style: italic;
+      font-size: 14px;
+      color: rgba(255,255,255,.85);
+    }
+
+    /* ── SLIDE 5 — INFLUENCIADORES ── */
+    #s5 .layout { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+    #s5 img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      height: 300px;
+      opacity: .9;
+    }
+    #s5 ul { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    #s5 ul li {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 15px; color: rgba(255,255,255,.85); line-height: 1.5;
+    }
+    #s5 ul li .bolinha {
+      min-width: 10px; height: 10px;
+      background: var(--acento);
+      border-radius: 50%;
+      margin-top: 6px;
+    }
+
+    /* ── SLIDE 6 — DADOS BRASIL ── */
+    #s6 .dados { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 4px; }
+    #s6 .dado {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px 22px;
+      text-align: center;
+    }
+    #s6 .dado .n {
+      font-size: clamp(28px,3.5vw,48px);
+      font-weight: 800;
+      color: var(--acento);
+      line-height: 1;
+    }
+    #s6 .dado p { font-size: 13px; color: rgba(255,255,255,.7); margin-top: 10px; line-height: 1.5; }
+    #s6 .exemplos {
+      display: flex; gap: 16px; margin-top: 22px; flex-wrap: wrap;
+    }
+    #s6 .ex {
+      background: rgba(255,255,255,.07);
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-size: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    #s6 .ex strong { color: var(--acento); display: block; font-size: 16px; }
+
+    /* ── SLIDE 7 — PARALELO ── */
+    #s7 .tabela {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: clamp(12px,1.2vw,15px);
+    }
+    #s7 .tabela thead th {
+      background: var(--acento);
+      color: #000;
+      font-weight: 700;
+      padding: 14px 20px;
+      text-align: left;
+      font-size: 14px;
+    }
+    #s7 .tabela tbody tr { border-bottom: 1px solid rgba(255,255,255,.08); }
+    #s7 .tabela tbody tr:nth-child(even) { background: rgba(255,255,255,.04); }
+    #s7 .tabela tbody td { padding: 14px 20px; color: rgba(255,255,255,.85); line-height: 1.5; }
+    #s7 .tabela tbody td:first-child { color: var(--acento); font-weight: 600; }
+
+    /* ── SLIDE 8 — COMO EXERCEM ── */
+    #s8 .mecanismos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    #s8 .mec {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 22px;
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    #s8 .icone {
+      width: 44px; height: 44px; min-width: 44px;
+      border-radius: 50%;
+      background: rgba(232,160,32,.15);
+      border: 2px solid var(--acento);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+    #s8 .mec h3 { font-size: 15px; margin-bottom: 6px; }
+    #s8 .mec p  { font-size: 13px; color: rgba(255,255,255,.78); line-height: 1.6; }
+
+    /* ── SLIDE 9 — EXEMPLOS ── */
+    #s9 .exemplos { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+    #s9 .ex {
+      background: var(--card);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    #s9 .ex img {
+      width: 100%; height: 160px;
+      object-fit: cover;
+      opacity: .85;
+    }
+    #s9 .ex .info { padding: 18px; }
+    #s9 .ex h3 { font-size: 15px; margin-bottom: 6px; color: var(--acento); }
+    #s9 .ex p  { font-size: 12px; color: rgba(255,255,255,.78); line-height: 1.55; }
+
+    /* ── SLIDE 10 — CONCLUSÃO ── */
+    #s10 .pontos { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; max-width: 820px; }
+    #s10 .ponto {
+      display: flex; gap: 18px; align-items: flex-start;
+      background: var(--card);
+      border-radius: 12px;
+      padding: 18px 22px;
+    }
+    #s10 .num {
+      font-size: 28px; font-weight: 800; color: var(--acento); line-height: 1; min-width: 36px;
+    }
+    #s10 .ponto p { font-size: 15px; color: rgba(255,255,255,.85); line-height: 1.6; }
+
+    /* ── SLIDE 11 — REFERÊNCIAS ── */
+    #s11 { background: linear-gradient(135deg, #0d1120, #1a1f3c); }
+    #s11 ul { list-style: none; display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+    #s11 ul li {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: clamp(11px,1.1vw,14px);
+      line-height: 1.55;
+      color: rgba(255,255,255,.82);
+      border-left: 3px solid var(--acento);
+    }
+    #s11 ul li a { color: var(--acento); text-decoration: none; }
+    #s11 ul li a:hover { text-decoration: underline; }
+
+    /* BARRA DE PROGRESSO */
+    #barra {
+      position: fixed;
+      top: 0; left: 0;
+      height: 3px;
+      background: var(--acento);
+      transition: width .3s ease;
+      z-index: 200;
+    }
+  </style>
+</head>
+<body>
+
+<div id="barra"></div>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 1 — CAPA
+══════════════════════════════════════════ -->
+<section class="slide ativo" id="s1">
+  <img class="bg-img"
+    src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=900&q=80"
+    alt="Redes sociais">
+
+  <div class="tag">Trabalho de Sociologia · 2026</div>
+  <div class="linha-ouro"></div>
+  <h1>Influenciadores Digitais<br>e Dominação Carismática</h1>
+  <p class="subtitulo">
+    Como criadores de conteúdo exercem influência semelhante<br>
+    ao conceito de <strong style="color:var(--acento)">liderança carismática de Max Weber</strong>
+  </p>
+
+  <div class="meta">
+    <div class="meta-item">
+      <label>Grupo</label>
+      <span>Ana Clara · Manuela · Maria Eduarda</span>
+    </div>
+    <div class="meta-item">
+      <label>Disciplina</label>
+      <span>Sociologia</span>
+    </div>
+    <div class="meta-item">
+      <label>Apresentação</label>
+      <span>10 de junho de 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 2 — WEBER
+══════════════════════════════════════════ -->
+<section class="slide" id="s2">
+  <div class="tag">Contexto Teórico</div>
+  <h2>Quem foi Max Weber?</h2>
+
+  <div class="layout">
+    <div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Max_Weber_1894.jpg/300px-Max_Weber_1894.jpg"
+        alt="Max Weber (1894)"
+      />
+      <p style="font-size:11px;color:var(--cinza);margin-top:8px;text-align:center">
+        Max Weber (1864–1920)<br>Fonte: Wikimedia Commons
+      </p>
+    </div>
+
+    <div>
+      <p>Max Weber foi um dos principais fundadores da <span class="destaque">Sociologia moderna</span>.
+         Desenvolveu teorias fundamentais sobre poder, dominação e legitimidade que continuam
+         explicando fenômenos sociais contemporâneos.</p>
+      <hr class="ouro">
+      <ul>
+        <li>Sociólogo e economista alemão (1864–1920)</li>
+        <li>Formulou o conceito de <span class="destaque">ação social</span> e os tipos ideais</li>
+        <li>Identificou <span class="destaque">três formas de dominação legítima</span>:
+            tradicional, racional-legal e carismática</li>
+        <li>Obras fundamentais: <em>Economia e Sociedade</em> (1922) e
+            <em>A Ética Protestante e o Espírito do Capitalismo</em> (1905)</li>
+        <li>Para Weber, <span class="destaque">carisma</span> é a qualidade extraordinária
+            atribuída a uma pessoa que a torna digna de liderança</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 3 — 3 TIPOS DE DOMINAÇÃO
+══════════════════════════════════════════ -->
+<section class="slide" id="s3">
+  <div class="tag">Max Weber · Teoria da Dominação</div>
+  <h2>Os 3 Tipos de Dominação Legítima</h2>
+
+  <div class="tipos">
+    <div class="tipo t1">
+      <h3>Dominação Tradicional</h3>
+      <hr style="border-top:1px solid #6b8cce;margin:10px 0 14px">
+      <p>Baseada nos <strong>costumes e hábitos históricos</strong>.
+         A obediência se dá pela crença no caráter sagrado das tradições
+         transmitidas de geração em geração.</p>
+      <p style="margin-top:12px"><em>Exemplos: monarquias, patriarcalismo, feudalismo</em></p>
+    </div>
+
+    <div class="tipo t2">
+      <h3>Dominação Racional-Legal</h3>
+      <hr style="border-top:1px solid #52b07a;margin:10px 0 14px">
+      <p>Baseada em <strong>leis, normas e regras formais</strong>.
+         A obediência se dá ao cargo ou à função, não à pessoa.
+         É o fundamento dos Estados modernos e das burocracias.</p>
+      <p style="margin-top:12px"><em>Exemplos: governos democráticos, empresas, leis</em></p>
+    </div>
+
+    <div class="tipo t3">
+      <h3>Dominação Carismática</h3>
+      <hr style="border-top:1px solid var(--acento);margin:10px 0 14px">
+      <p>Baseada nas <strong>qualidades excepcionais do líder</strong>.
+         Os seguidores obedecem por admiração pessoal e crença
+         nas capacidades extraordinárias do indivíduo.</p>
+      <p style="margin-top:12px"><em>Exemplos: líderes religiosos, políticos populistas, <strong>influenciadores</strong></em></p>
+    </div>
+  </div>
+
+  <p style="margin-top:24px;font-size:13px;color:var(--cinza)">
+    Fonte: WEBER, Max. <em>Economia e Sociedade</em>. UnB, 2000 ·
+    Redalyc — Dominação Carismática (10758900010) ·
+    Brasilescola.uol.com.br
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 4 — DOMINAÇÃO CARISMÁTICA (detalhe)
+══════════════════════════════════════════ -->
+<section class="slide" id="s4">
+  <div class="tag">Conceito Central</div>
+  <h2>O que é a Dominação Carismática?</h2>
+
+  <div class="pilares">
+    <div class="pilar">
+      <h3>Qualidade Extraordinária</h3>
+      <p>O carisma não é uma característica objetiva, mas
+         <strong>uma crença dos seguidores</strong> de que o líder possui
+         dons e poderes excepcionais que os demais não possuem.</p>
+    </div>
+
+    <div class="pilar">
+      <h3>Devoção Pessoal</h3>
+      <p>A relação entre líder e seguidor é
+         <strong>altamente emocional e pessoal</strong>.
+         Os seguidores são movidos por admiração, entusiasmo
+         e identificação com o líder.</p>
+    </div>
+
+    <div class="pilar">
+      <h3>Missão e Vocação</h3>
+      <p>O líder carismático apresenta uma <strong>visão de mundo,
+         estilo de vida ou missão</strong> que seus seguidores
+         abraçam como sua própria identidade.</p>
+    </div>
+
+    <div class="pilar">
+      <h3>Instabilidade Estrutural</h3>
+      <p>Diferente da dominação tradicional ou legal, o carisma
+         <strong>depende da manutenção contínua</strong> da crença —
+         se o líder "decepciona", a dominação se dissolve.</p>
+    </div>
+  </div>
+
+  <div class="citacao">
+    "O carisma é uma qualidade extraordinária (...) de uma personalidade,
+     em virtude da qual é considerado alguém dotado de forças ou características
+     sobrenaturais, sobre-humanas, ou pelo menos especificamente excepcionais."
+    <br><strong style="color:var(--acento);font-style:normal">— Max Weber, Economia e Sociedade</strong>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 5 — O QUE SÃO INFLUENCIADORES
+══════════════════════════════════════════ -->
+<section class="slide" id="s5">
+  <div class="tag">Era Digital</div>
+  <h2>O que são Influenciadores Digitais?</h2>
+
+  <div class="layout">
+    <img
+      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700&q=80"
+      alt="Criador de conteúdo com câmera e smartphone"
+    />
+
+    <ul>
+      <li>
+        <div class="bolinha"></div>
+        <span>Indivíduos que usam <span class="destaque">plataformas digitais</span>
+        (Instagram, YouTube, TikTok) para compartilhar opiniões, experiências e estilos de vida,
+        construindo audiências leais.</span>
+      </li>
+      <li>
+        <div class="bolinha"></div>
+        <span>Atuam como <span class="destaque">mediadores simbólicos</span>:
+        disseminam valores, comportamentos e ideologias culturais para milhões de seguidores.</span>
+      </li>
+      <li>
+        <div class="bolinha"></div>
+        <span>Seu poder não vem de uma <span class="destaque">posição formal</span> de autoridade,
+        mas da <span class="destaque">conexão emocional</span> com a audiência — muito próximo
+        do que Weber descreveu como dominação carismática.</span>
+      </li>
+      <li>
+        <div class="bolinha"></div>
+        <span>Constroem <span class="destaque">comunidades participativas</span> em que os
+        seguidores se identificam com o estilo de vida e os valores do criador de conteúdo.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 6 — DADOS BRASIL
+══════════════════════════════════════════ -->
+<section class="slide" id="s6">
+  <div class="tag">Contexto Brasileiro</div>
+  <h2>Influenciadores Digitais no Brasil</h2>
+
+  <div class="dados">
+    <div class="dado">
+      <div class="n">55%</div>
+      <p>dos brasileiros já compraram<br>um produto indicado por<br>influenciadores digitais</p>
+    </div>
+    <div class="dado">
+      <div class="n">85%</div>
+      <p>dos influenciadores produzem<br>conteúdo em mais de<br>uma rede social</p>
+    </div>
+    <div class="dado">
+      <div class="n">#1</div>
+      <p>o Brasil é um dos maiores<br>mercados de influência<br>digital do mundo</p>
+    </div>
+  </div>
+
+  <div style="margin-top:20px">
+    <p style="color:var(--acento);font-weight:700;margin-bottom:12px;font-size:14px">
+      Maiores influenciadores brasileiros (por seguidores)
+    </p>
+    <div class="exemplos">
+      <div class="ex"><strong>Virgínia Fonseca</strong>52,8 mi · lifestyle</div>
+      <div class="ex"><strong>Neymar Jr.</strong>44–200 mi · esporte/vida pessoal</div>
+      <div class="ex"><strong>Bruna Marquezine</strong>44,7 mi · moda/cultura</div>
+      <div class="ex"><strong>Nikolas Ferreira</strong>+6,9 mi em 2025 · política</div>
+      <div class="ex"><strong>Felca</strong>+12 mi em 2025 · humor</div>
+    </div>
+  </div>
+
+  <p style="margin-top:18px;font-size:12px;color:var(--cinza)">
+    Fonte: Hype Auditor (2025) · Favikon (2026) · Qualibest · Redalyc — Influenciadores Digitais e Branding (4777/477774328005)
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 7 — PARALELO WEBER × INFLUENCIADORES
+══════════════════════════════════════════ -->
+<section class="slide" id="s7">
+  <div class="tag">Análise Sociológica</div>
+  <h2>Paralelo: Weber × Influenciadores Digitais</h2>
+
+  <table class="tabela">
+    <thead>
+      <tr>
+        <th>Conceito em Weber</th>
+        <th>Na Dominação Carismática Clássica</th>
+        <th>Nos Influenciadores Digitais</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Qualidade extraordinária</td>
+        <td>Dom divino, heroísmo, carisma pessoal inato</td>
+        <td>Autenticidade percebida, estética, estilo de vida invejável</td>
+      </tr>
+      <tr>
+        <td>Devoção dos seguidores</td>
+        <td>Fé irracional, entrega emocional ao líder</td>
+        <td>Engajamento, identificação, senso de comunidade ("fanbase")</td>
+      </tr>
+      <tr>
+        <td>Missão e visão</td>
+        <td>Mensagem revolucionária ou religiosa</td>
+        <td>Estilo de vida, causas, nicho temático (moda, fitness, política)</td>
+      </tr>
+      <tr>
+        <td>Dependência da crença</td>
+        <td>Carisma se dissolve com falhas ou contradições</td>
+        <td>"Cancel culture": influenciador perde poder com polêmicas</td>
+      </tr>
+      <tr>
+        <td>Apóstolos/seguidores</td>
+        <td>Discípulos que difundem a mensagem do líder</td>
+        <td>Seguidores que compartilham, replicam e defendem o influenciador</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="margin-top:16px;font-size:12px;color:var(--cinza)">
+    Fonte: Redalyc — Poder Instituído e Potência Subversiva (10758900010) ·
+    Scielo — Influenciadores Digitais: Novos Mediadores Simbólicos ·
+    WEBER, Max. Economia e Sociedade.
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 8 — COMO EXERCEM A INFLUÊNCIA
+══════════════════════════════════════════ -->
+<section class="slide" id="s8">
+  <div class="tag">Mecanismos de Poder</div>
+  <h2>Como os Influenciadores Exercem Influência Carismática?</h2>
+
+  <div class="mecanismos">
+    <div class="mec">
+      <div class="icone">📱</div>
+      <div>
+        <h3>Autenticidade Performática</h3>
+        <p>Transmitem uma imagem de <strong>intimidade e sinceridade</strong>
+           com a audiência, criando a sensação de acesso à vida "real" do influenciador —
+           o que gera vínculos emocionais profundos.</p>
+      </div>
+    </div>
+
+    <div class="mec">
+      <div class="icone">🔄</div>
+      <div>
+        <h3>Constância e Presença</h3>
+        <p>A produção contínua de conteúdo mantém o <strong>carisma vivo</strong>.
+           Assim como Weber alertava que o carisma precisa ser "provado" continuamente,
+           influenciadores precisam manter engajamento constante.</p>
+      </div>
+    </div>
+
+    <div class="mec">
+      <div class="icone">🧠</div>
+      <div>
+        <h3>Identificação e Projeção</h3>
+        <p>Os seguidores <strong>projetam nos influenciadores</strong> seus próprios sonhos
+           e aspirações. Seguir o criador de conteúdo é, simbolicamente, aproximar-se
+           do estilo de vida desejado.</p>
+      </div>
+    </div>
+
+    <div class="mec">
+      <div class="icone">🌐</div>
+      <div>
+        <h3>Algoritmo como Amplificador</h3>
+        <p>As plataformas digitais funcionam como <strong>estruturas que amplificam</strong>
+           o carisma: quanto mais engajamento, mais visibilidade — criando um ciclo
+           que reforça a dominação carismática no ambiente digital.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 9 — EXEMPLOS CONCRETOS
+══════════════════════════════════════════ -->
+<section class="slide" id="s9">
+  <div class="tag">Casos Reais</div>
+  <h2>Exemplos Concretos de Carisma Digital</h2>
+
+  <div class="exemplos">
+    <div class="ex">
+      <img
+        src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&q=80"
+        alt="Lifestyle influencer"
+      />
+      <div class="info">
+        <h3>Lifestyle &amp; Consumo</h3>
+        <p>Influenciadores como Virgínia Fonseca constroem uma <strong>narrativa de vida
+           aspiracional</strong>. Seguidores consomem não apenas produtos, mas um
+           <em>estilo de vida</em> — comportamento tipicamente carismático segundo Weber.</p>
+      </div>
+    </div>
+
+    <div class="ex">
+      <img
+        src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&q=80"
+        alt="Influenciador político em evento"
+      />
+      <div class="info">
+        <h3>Política &amp; Mobilização</h3>
+        <p>Nikolas Ferreira usou o Instagram para construir uma <strong>base de
+           seguidores devotos</strong> antes mesmo de ter poder institucional —
+           dominação carismática pura, ainda sem burocracia ou tradição.</p>
+      </div>
+    </div>
+
+    <div class="ex">
+      <img
+        src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&q=80"
+        alt="Criador de conteúdo"
+      />
+      <div class="info">
+        <h3>Humor &amp; Cultura</h3>
+        <p>Youtubers como Felca crescem 12 milhões de seguidores em um ano via
+           <strong>conteúdo viral</strong>. O humor cria identidade de grupo:
+           os fãs compartilham valores e linguagem — comunidade típica da dominação
+           carismática.</p>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top:16px;font-size:12px;color:var(--cinza)">
+    Fonte: Hype Auditor (2025) · Favikon (2026) · Mundo do Marketing (2025)
+  </p>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 10 — CONCLUSÃO
+══════════════════════════════════════════ -->
+<section class="slide" id="s10">
+  <div class="tag">Considerações Finais</div>
+  <h2>Conclusão</h2>
+
+  <div class="pontos">
+    <div class="ponto">
+      <div class="num">1</div>
+      <p>A teoria da <span class="destaque">dominação carismática de Weber</span>,
+         elaborada no início do século XX, se mostra surpreendentemente atual para
+         analisar o fenômeno dos influenciadores digitais.</p>
+    </div>
+
+    <div class="ponto">
+      <div class="num">2</div>
+      <p>Criadores de conteúdo exercem <span class="destaque">poder sem cargo ou tradição</span>:
+         seu único instrumento é a crença dos seguidores em suas qualidades excepcionais —
+         exatamente o núcleo do conceito weberiano.</p>
+    </div>
+
+    <div class="ponto">
+      <div class="num">3</div>
+      <p>O ambiente digital <span class="destaque">potencializa e acelera</span> a dominação
+         carismática: algoritmos amplificam o carisma, e a "cancel culture" ilustra
+         a fragilidade estrutural que Weber já havia identificado.</p>
+    </div>
+
+    <div class="ponto">
+      <div class="num">4</div>
+      <p>Compreender essa dinâmica é fundamental para uma <span class="destaque">leitura crítica
+         da sociedade digital</span>, revelando as estruturas de poder presentes nas redes sociais.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SLIDE 11 — REFERÊNCIAS
+══════════════════════════════════════════ -->
+<section class="slide" id="s11">
+  <div class="tag">Fontes Consultadas</div>
+  <h2>Referências</h2>
+
+  <ul>
+    <li>
+      WEBER, Max. <em>Economia e Sociedade: fundamentos da sociologia compreensiva</em>.
+      Brasília: Editora UnB, 2000. [Obra original: 1922]
+    </li>
+    <li>
+      BRASILESCOLA. <strong>Dominação Carismática</strong>.
+      Disponível em: <a href="https://brasilescola.uol.com.br" target="_blank">brasilescola.uol.com.br</a>.
+      Acesso em: junho de 2026.
+    </li>
+    <li>
+      UNIVERSIDADE ESTADUAL DO CENTRO-OESTE (UNICENTRO).
+      Produção acadêmica em Ciências Sociais.
+      Disponível em: <a href="https://www3.unicentro.br" target="_blank">www3.unicentro.br</a>.
+      Acesso em: junho de 2026.
+    </li>
+    <li>
+      REDALYC. <strong>Poder Instituído e Potência Subversiva: Max Weber e a Dupla Face da Dominação Carismática</strong>.
+      <em>Revista de Ciências Sociais</em>, v. 107, n. 10758900010.
+      Disponível em: <a href="https://www.redalyc.org/journal/107/10758900010/html/" target="_blank">redalyc.org</a>.
+      Acesso em: junho de 2026.
+    </li>
+    <li>
+      REDALYC. <strong>Influenciadores Digitais e Branding: Uma Revisão Bibliométrica e Sistemática do Campo</strong>.
+      <em>Revista de Gestão</em>, v. 4777, n. 477774328005.
+      Disponível em: <a href="https://www.redalyc.org/journal/4777/477774328005/html/" target="_blank">redalyc.org</a>.
+      Acesso em: junho de 2026.
+    </li>
+    <li>
+      SCIELO PORTUGAL. <strong>Influenciadores digitais: os novos mediadores simbólico-ideológicos da era digital</strong>.
+      <em>Sociologia, Problemas e Práticas</em>, n. 300, 2023.
+      Disponível em: <a href="https://scielo.pt" target="_blank">scielo.pt</a>.
+      Acesso em: junho de 2026.
+    </li>
+  </ul>
+</section>
+
+<!-- ══════════ NAVEGAÇÃO ══════════ -->
+<div id="nav">
+  <button onclick="ir(-1)" title="Anterior">&#8592;</button>
+  <span id="contador">1 / 11</span>
+  <button onclick="ir(1)" title="Próximo">&#8594;</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const total  = slides.length;
+  let atual    = 0;
+
+  function ir(delta) {
+    slides[atual].classList.remove('ativo');
+    atual = (atual + delta + total) % total;
+    slides[atual].classList.add('ativo');
+    document.getElementById('contador').textContent = `${atual + 1} / ${total}`;
+    document.getElementById('barra').style.width = `${((atual + 1) / total) * 100}%`;
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === ' ') ir(1);
+    if (e.key === 'ArrowLeft')                   ir(-1);
+  });
+</script>
+
+</body>
+</html>
