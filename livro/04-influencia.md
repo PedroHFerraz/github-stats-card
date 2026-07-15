@@ -46,7 +46,7 @@ O engenheiro-chefe se chama **Robert Cialdini**, psicólogo social que fez uma c
 infiltrado, disfarçado, dentro de escolas de vendedores, arrecadadores, operadores de telemarketing
 e negociadores, para catalogar de dentro as alavancas que fazem um "sim" sair da boca das pessoas. O
 resultado é **_Influence: The Psychology of Persuasion_** ("Influência: a psicologia da persuasão"),
-e a boa notícia é que ele tem edição brasileira consagrada: **_As Armas da Persuasão_ (Sextante)**.
+e a boa notícia é que ele tem edição brasileira consagrada: **_As Armas da Persuasão_ (HarperCollins)**.
 É leitura obrigatória, e está no seu idioma. O segundo livro dele aprofunda um ponto específico:
 **_Pre-Suasion_** ("Pré-suasão"), de 2016, sobre o instante *antes* da mensagem — também traduzido,
 **_Pré-Suasão_ (Sextante, 2017)**. Dois livros, duas edições brasileiras, nenhuma desculpa para não
@@ -279,8 +279,8 @@ tinha tomado. A frase é curta e devolve o poder: "vou pensar". Pratique até el
 
 ## Se você só ler um livro desta parte, leia:
 
-**Robert Cialdini, *As Armas da Persuasão* (Sextante).** É a base de tudo, é ciência levada a sério
+**Robert Cialdini, *As Armas da Persuasão* (HarperCollins).** É a base de tudo, é ciência levada a sério
 por quem se disfarçou de vendedor para entendê-la de dentro, e está em português no seu alcance. Leia
-a edição da Sextante do começo ao fim, e leia como quem estuda o inimigo: cada alavanca que você
+a edição brasileira do começo ao fim, e leia como quem estuda o inimigo: cada alavanca que você
 aprender a nomear é uma que vão ter mais dificuldade de puxar em você sem que você perceba. Depois,
 se quiser o nível avançado, vá para *Pré-Suasão*. Mas comece pelo primeiro. Ele é a vacina.

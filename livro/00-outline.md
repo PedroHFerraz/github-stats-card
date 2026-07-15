@@ -101,7 +101,7 @@ alguém para contar duas histórias, uma falsa, e veja se "o lado do olhar" pred
 **Vinheta (1 linha):** Jane consegue que um delegado hostil lhe entregue um arquivo sigiloso sem
 pedir nada — só reorganizando a ordem em que o delegado chega às próprias conclusões.
 
-**A estante:** Robert Cialdini, *Influence* → **[BR]** *As Armas da Persuasão* (Sextante) e
+**A estante:** Robert Cialdini, *Influence* → **[BR]** *As Armas da Persuasão* (HarperCollins) e
 *Pre-Suasion* (2016) → **[BR]** *Pré-Suasão* (Sextante, 2017); Milton Erickson e a hipnose
 conversacional (via Jay Haley, *Uncommon Therapy*, 1973 **[só inglês]**); Bandler & Grinder e a PNL
 **[só inglês]** — com aviso.
