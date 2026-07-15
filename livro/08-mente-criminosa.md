@@ -22,6 +22,19 @@ a segurança de quem mora perto; o "solitário desajustado" do perfil era ficç�
 cima de fatos que diziam outra coisa. Jane confiou nos fatos. O perfil, ele deixou na mesa, onde
 pertencia.
 
+A pergunta que Jane fez na sala — quantos homens desta cidade se encaixam nesse perfil? — é a pergunta que
+deveria acompanhar todo perfil criminal, e quase nunca acompanha. Ela é chata, aritmética, nada
+cinematográfica, e é exatamente por isso que os roteiros a omitem: estraga o espetáculo. O prazer do
+profiling ficcional está na sensação de que a mente do criminoso é um livro que o gênio lê à distância,
+página por página. A realidade é que a maior parte do que se "lê" ali cabe em meia cidade, e a fração que
+de fato estreita a busca vem de dados frios — geografia, vitimologia, padrões repetidos — e não da
+intuição sobre a alma alheia. Este é o capítulo em que a distância entre a fama de uma técnica e a sua
+ciência é a maior de todo o livro, e por isso ele exige o cuidado redobrado que só o ceticismo dá. Vamos
+tratar os assassinos reais que aparecem a seguir como dinâmica a entender, nunca como espetáculo a
+consumir — porque transformar a dor das vítimas em entretenimento é, no fundo, o mesmo saque que Jane
+cometia nos velórios, só que com uma trilha sonora melhor. A estante a seguir é fascinante, e é preciso
+lê-la com uma mão no fascínio e a outra no freio.
+
 ## A estante
 
 Nenhum campo do arsenal de Jane tem uma distância tão grande entre a fama e a ciência quanto o
@@ -89,6 +102,39 @@ alma do criminoso — "ele é solitário, teve infância difícil, sente-se inad
 para o território do horóscopo. A ciência do profiling é a parte que conta e mede. A pseudociência do
 profiling é a parte que adivinha.
 
+## O terno abotoado, e o homem errado
+
+A lenda fundadora do profiling é uma história boa demais, e é justamente por ser boa demais que precisa
+ser examinada. Nos anos 1950, Nova York foi aterrorizada por um homem que plantava bombas caseiras havia
+mais de uma década. A polícia, sem pistas, recorreu a um psiquiatra, que estudou as cartas do agressor e
+produziu um perfil detalhado: um homem eslavo, católico, de meia-idade, solteiro, morando com uma
+parente do sexo feminino, meticuloso, ressentido com uma antiga empregadora. E encerrou com um detalhe
+teatral — quando o pegarem, ele estará usando um terno cruzado, abotoado. Quando o culpado foi finalmente
+identificado, por um trabalho de arquivo e não pelo perfil, lá estava ele: eslavo, católico, solteiro,
+morando com as irmãs. E, ao ser preso, pediu para trocar de roupa e voltou vestindo um terno cruzado,
+abotoado. A história virou o mito de origem do profiling, a prova de que a mente pode ser lida à
+distância como um livro aberto.
+
+Só que, quando alguém se deu ao trabalho de reler o perfil inteiro, a mágica encolheu. Boa parte das
+afirmações era efeito Barnum forense — larga o bastante para caber em muita gente. Vários palpites
+específicos estavam simplesmente errados, e são convenientemente esquecidos ao recontar a história,
+porque nós fazemos com perfis o que a plateia do médium faz com as previsões: guardamos o terno abotoado
+e apagamos os erros. O "acerto" espetacular é, em boa medida, uma construção retrospectiva da nossa
+memória seletiva. O mito não prova que o profiling funciona. Prova que uma boa história de acerto é
+irresistível, e que a irresistibilidade é justamente o problema.
+
+E há o outro lado do mito, o que a televisão nunca conta: o perfil que prende o inocente. Na Inglaterra
+dos anos 1990, uma jovem foi assassinada à luz do dia num parque, diante do filho pequeno. Um psicólogo
+forense montou o perfil do assassino, a polícia encontrou um homem que encaixava, e — como o perfil por
+si só não dava prova nenhuma — montou-se uma operação em que uma policial disfarçada tentou, por meses,
+seduzir o suspeito e extrair dele uma confissão que combinasse com o perfil. O homem nunca confessou nada
+de verdade, o caso foi jogado fora por um juiz que o classificou de manipulação grosseira, e a vida do
+sujeito foi destruída pela suspeita. Anos depois, o exame de DNA apontou o verdadeiro assassino, que não
+era ele. O perfil não tinha achado um culpado. Tinha inventado um, e quase o condenou. Guarde os dois
+lados juntos: o terno abotoado que vira lenda e o inocente que vira suspeito nascem exatamente do mesmo
+método, e a diferença entre os dois não é a genialidade do profiler — é a sorte de a história terminar
+bem ou mal.
+
 ## Como Jane usa
 
 Jane faz profiling relâmpago, e a série o apresenta como um dom quase mágico — ele olha para uma cena
@@ -149,6 +195,36 @@ com vítimas reais. Vou tratá-los como dinâmica, nunca como espetáculo, e rec
 mesmo ao treinar. Aprender a mecânica do crime para não ser enganado por narrativas fáceis é
 defensivo. Consumir a dor das vítimas como entretenimento é a versão true crime do mesmo saque que
 Jane cometia nos velórios. Fica a linha.
+
+### O efeito CSI e o trabalho chato que resolve os casos
+
+A ficção criminal fez com a cabeça do público o que o perfil faz com a cena: encheu-a de expectativas
+lindas e falsas. Chamam isso, nos tribunais, de "efeito CSI" — a distorção causada por décadas de séries
+em que um laboratório reluzente resolve qualquer crime em quarenta minutos, com uma máquina que cospe o
+nome do assassino a partir de um fio de cabelo. Jurados de verdade passaram a esperar esse tipo de prova
+mágica e a duvidar de casos sólidos quando ela não aparece, porque a realidade forense é lenta,
+incompleta e cheia de incerteza. A mesma inflação de expectativa que faz o público superestimar o
+laboratório faz superestimar o profiler: nos dois casos, a televisão vende certeza onde a vida oferece
+probabilidade, e vende o gênio solitário onde a vida depende de equipe, papelada e paciência.
+
+Porque é isto que a estatística realmente mostra sobre como crimes são resolvidos, e é decepcionante de
+tão banal: a esmagadora maioria dos casos é elucidada não por perfis psicológicos nem por saltos de
+genialidade, mas pelo trabalho mais chato do mundo. Uma testemunha que viu. Uma câmera que gravou. Um
+telefone que registrou onde esteve. Uma confissão. Um informante. Um vestígio material ligado a um
+suspeito que já era conhecido por vias comuns. O profiling, quando ajuda, ajuda nas margens — estreitando
+prioridades, sugerindo por onde começar — e quase nunca é a peça que fecha o caso. Vender o contrário,
+o detetive que "sente" o culpado e o aponta num relâmpago, não é só impreciso: é perigoso, porque desvia
+recursos e atenção do trabalho maçante que de fato funciona.
+
+E há um viés final, que envenena a própria avaliação do método: o **viés retrospectivo**, a nossa mania de,
+depois que sabemos a resposta, achar que ela era óbvia o tempo todo. Quando um caso é resolvido, revisitamos
+o perfil e destacamos tudo o que "bateu", esquecendo o que não bateu e o quanto o perfil era vago o
+bastante para bater de qualquer jeito — exatamente o terno abotoado. O perfil parece genial em retrospecto
+porque a nossa memória o edita para parecer. Se você quisesse testar o profiling de verdade, teria de
+julgar os perfis *antes* de o culpado aparecer, contra critérios fixados de antemão, contando os erros com
+o mesmo cuidado com que se contam os acertos. Quando alguém faz isso — e alguns fizeram —, o brilho some, e
+o que sobra é um método com valor modesto e específico, cercado por uma lenda gigante que a ficção alimenta
+e a nossa memória seletiva mantém de pé.
 
 ## Treino
 

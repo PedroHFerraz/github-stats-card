@@ -27,6 +27,18 @@ e três pessoas ao redor juraram, pelo resto da vida, ter visto um homem falar c
 Ele não falou com ninguém. Ele falou com a viva, que fez todo o trabalho. Isso tem nome, tem
 literatura, tem manual. Chama-se leitura fria, e é a habilidade mais mal compreendida do arsenal.
 
+Vale a pena parar um segundo na herdeira, porque ela não era tola. Era uma mulher adulta, provavelmente
+competente na vida, que administrava o próprio dinheiro e não caía em conto do vigário na rua. E, ainda
+assim, saiu daquele velório convencida de ter presenciado um milagre. A leitura fria não procura os
+crédulos; ela fabrica a credulidade em qualquer um, no momento certo — e o momento de um velório, com a
+guarda emocional em frangalhos, é o mais fértil de todos. Guarde isso, porque é o fio que costura o livro
+inteiro: as técnicas que vamos estudar não funcionam só com "os outros", com os ingênuos, com quem
+acredita em horóscopo. Funcionam com você, comigo, com a herdeira competente, sempre que a hora e a dor
+são as certas. Entender o truque não é subir num pedestal de superioridade. É descer do pedestal onde a
+gente acha que é imune. É por isso que este primeiro capítulo importa tanto, e por isso ele vem primeiro:
+tudo o mais no arsenal de Jane é, de um jeito ou de outro, uma variação sofisticada do que aquela médium
+de velório fez com três frases e uma pausa.
+
 ## A estante
 
 A leitura fria — em inglês, *cold reading*, algo como "leitura a frio", porque você lê alguém sem
@@ -111,6 +123,44 @@ O coach que promete destravar o seu bloqueio faz leitura fria com PowerPoint. E 
 diz, ao telefone, que "percebe que você é uma pessoa que valoriza qualidade" está lançando uma isca
 de Barnum antes de te empurrar o plano mais caro.
 
+## O experimento de Forer, e a indústria que nasceu dele
+
+Em 1948, um psicólogo americano chamado Bertram Forer resolveu provar, com os próprios alunos, o que
+os cartomantes sabiam por instinto. Aplicou à turma um teste de personalidade — sério, com aparência
+científica — e prometeu devolver a cada aluno um perfil individual, feito sob medida a partir das
+respostas. Uma semana depois, entregou os perfis em envelopes fechados, um para cada estudante, e
+pediu que cada um avaliasse, numa escala de zero a cinco, o quanto aquele retrato o descrevia. A média
+das notas foi 4,26 — quase o máximo. Os alunos ficaram impressionados com a precisão do teste.
+
+Só que todos os perfis eram idênticos. Forer havia entregado a cada aluno exatamente o mesmo texto,
+montado por ele a partir de frases pinçadas de um livro de horóscopo de banca de jornal. "Você tem uma
+grande necessidade de que os outros gostem de você e o admirem." "Você é crítico consigo mesmo." "Você
+tem uma boa reserva de capacidade não utilizada." Trinta e poucos jovens diferentes leram o mesmo
+parágrafo e cada um reconheceu, nele, o seu próprio rosto. O experimento é repetido em salas de aula do
+mundo inteiro até hoje, com o mesmo resultado hipnótico, e foi por causa dele que o fenômeno ganhou o
+nome que abre este capítulo — o efeito Barnum, batizado anos depois pelo psicólogo Paul Meehl em
+homenagem ao empresário que dizia ter algo para todo mundo. O efeito Forer não é uma curiosidade de
+laboratório. É a prova controlada de que a leitura fria funciona sem nenhum poder, apenas explorando a
+vaidade universal de ser descrito.
+
+Sobre esse alicerce ergueu-se uma indústria bilionária. Nos Estados Unidos, as "linhas psíquicas" de
+telefone faturaram fortunas nos anos 1990 cobrando por minuto para que "sensitivos" lessem estranhos —
+e, quando investigadas, revelavam operadores lendo roteiros de leitura fria a partir de manuais, sem
+nenhuma pretensão de dom. Médiuns de televisão construíram carreiras inteiras fazendo, no palco, com
+plateias enormes, exatamente o que a médium do velório fez com a herdeira: shotgunning para achar quem
+perdeu alguém, fishing para pescar o nome, o out para transformar cada erro na próxima tentativa. Quando
+alguém se deu ao trabalho de contar, os "acertos" desabaram para o nível do palpite — mas ninguém no
+auditório estava contando, porque o auditório veio para lembrar dos acertos.
+
+No Brasil, a mesma engenharia funciona sem precisar de linha telefônica cara. O horóscopo do jornal é
+uma fábrica industrial de afirmações-arco-íris — repare como todo signo, em toda semana, "precisa
+equilibrar a vida pessoal e o trabalho" e "deve prestar atenção a uma conversa importante". O cartomante
+da esquina, o tarólogo do aplicativo, o pai de santo que atende por vídeo, o coach que promete destravar
+o seu bloqueio: todos operam o mesmo motor de Forer, cobrando pela sensação de terem visto algo que só
+você poderia ter. E o motor funciona porque você, do outro lado, quer tão desesperadamente ser visto que
+faz metade do trabalho de graça. A leitura fria não vende adivinhação. Vende a você o seu próprio reflexo,
+com uma moldura, e cobra pela moldura.
+
 ## Como Jane usa
 
 Jane não adivinha. Ele calibra. É uma distinção que muda tudo.
@@ -163,6 +213,39 @@ vendendo entretenimento. Está vendendo o luto das pessoas de volta para elas, c
 Não venda pseudociência, nem para si mesmo. A leitura fria é uma habilidade fascinante e um retrato
 constrangedor da nossa vontade de sermos vistos. As duas coisas ao mesmo tempo. Aprender a executá-la
 serve, sobretudo, para nunca mais ser executado por ela.
+
+### A leitura quente, e os testes que também são Barnum
+
+Falta desmontar duas coisas, e a primeira é uma armadilha em que até o cético cai. Existe a leitura fria,
+que descrevemos — dizer coisas sem saber nada. Mas existe também a **leitura quente**, em inglês *hot
+reading*, que é o oposto disfarçado do mesmo espetáculo: o "sensitivo" que parece adivinhar porque, na
+verdade, pesquisou a vítima de antemão. Redes sociais, conversas plantadas por um assistente na fila de
+entrada, um cúmplice que ouve a plateia antes do show — tudo isso alimenta o médium com informação
+verdadeira, que ele depois "recebe do além". Quando você vê alguém acertar com uma precisão que a
+leitura fria não explicaria, a hipótese econômica não é o poder. É a pesquisa. No mundo do celular, hot
+reading nunca foi tão fácil: basta o seu nome para um estranho saber, em trinta segundos, o suficiente
+para parecer clarividente. Desconfie especialmente do acerto bom demais. Ele costuma ser trabalho de
+dossiê, não de dom.
+
+A segunda armadilha é mais respeitável, e por isso mais perigosa: os testes de personalidade. Você já
+fez um daqueles que dizem se você é do "tipo" tal — quatro letras, um número, uma cor, um animal. E saiu
+impressionado com o quanto "bateu". Repare no mecanismo, porque é o mesmo do velório. O resultado é
+redigido em afirmações-arco-íris — "você valoriza a lógica, mas também se importa profundamente com as
+pessoas" — larga o bastante para caber em qualquer um, lisonjeira o bastante para você querer que caiba.
+Os mais populares desses testes têm confiabilidade fraca: refaça o mesmo teste umas semanas depois, num
+dia de humor diferente, e uma boa parte das pessoas cai num "tipo" diferente — o que, para algo que
+promete revelar a sua essência estável, é um problema fatal. E a capacidade de prever qualquer coisa
+relevante da sua vida a partir dessas letrinhas é modesta ou nula. Não estou dizendo que fazer o teste
+não seja divertido; estou dizendo que a sensação de "nossa, sou exatamente isso" é o efeito Forer
+trabalhando em você com um verniz corporativo. O horóscopo e o teste de personalidade da consultoria
+usam o mesmo motor. Um cobra por signo, o outro por crachá.
+
+O ponto que costura os dois é ético, e é o coração deste capítulo: a leitura fria explora um desejo
+humano decente — o de ser visto, compreendido, adivinhado. Não é vaidade tola; é uma fome real de não
+estar sozinho na própria cabeça. O charlatão fatura em cima dessa fome. E é por isso que aprender o
+truque não te deixa cínico em relação às pessoas — te deixa protetor. Você para de rir de quem acredita
+no cartomante e passa a entender o que estão vendendo a essa pessoa, e por quanto. A vacina não é o
+desprezo. É saber o nome do que estão fazendo com a solidão alheia.
 
 ## Treino
 

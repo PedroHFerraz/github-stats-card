@@ -20,6 +20,18 @@ Jane não disse nada na hora. Anotou. Um congelamento não é uma prova; é uma 
 cavar. Mas ele já sabia onde estava o dinheiro, e sabia porque tinha passado a primeira hora e
 quarenta sem procurar nada — só medindo a régua contra a qual aquele único desvio ia gritar.
 
+Repare no que Jane não fez, porque é tão importante quanto o que fez. Ele não chegou procurando o
+culpado. Não olhou para o síndico com desconfiança prévia, catalogando cada coçada de nariz como prova.
+Se tivesse feito isso — se tivesse entrado na sala já convencido —, teria encontrado "sinais de mentira"
+em todo mundo, porque o corpo humano, examinado com suspeita, é um festival de gestos ambíguos. O que ele
+fez foi o oposto e o mais difícil: passou a maior parte do tempo sem procurar nada, só medindo o normal.
+A leitura de corpo que presta não é um detector ligado o tempo todo, apitando a cada movimento. É uma
+régua construída com paciência e usada uma vez só, no ponto certo. Essa inversão — medir antes de julgar,
+esperar antes de ler — é o que separa o que Jane faz da caça às bruxas que passa por "linguagem corporal"
+nos cursos de fim de semana. E é, também, a diferença entre uma ferramenta que aponta onde investigar e
+uma superstição que fabrica culpados. A estante a seguir contém as duas coisas misturadas, e boa parte
+deste capítulo é aprender a separá-las.
+
 ## A estante
 
 O corpo comunica antes da fala e à revelia dela. Essa é a premissa comum de uma estante que vai da
@@ -89,6 +101,40 @@ relaxa, respira, conversa, porque não tem nada a esconder. "Forte finge fraco, 
 É o teatro do baseline invertido, e uma vez que você o enxerga na mesa, passa a enxergá-lo na
 reunião de trabalho, na negociação, no jantar de família.
 
+## Os números que ninguém quer ouvir
+
+Existe uma pergunta que os cursos de linguagem corporal evitam, e é a mais importante de todas: afinal,
+quão bem os humanos detectam mentira? A resposta foi medida, e é humilhante. Reunindo centenas de
+estudos em que pessoas tentavam separar verdades de mentiras, dois pesquisadores encontraram uma taxa
+média de acerto em torno de 54% — pouco acima de cara ou coroa. Cinquenta e quatro por cento. Décadas de
+folclore sobre "sinais infalíveis de mentira", e a espécie inteira mal supera o acaso. Pior: os
+profissionais que a sociedade treina justamente para isso — policiais, agentes de fronteira, juízes,
+peritos — não acertam mais do que o resto de nós. O que o treinamento tradicional aumenta não é a
+acurácia. É a confiança. E um detector de mentiras humano confiante e impreciso é a coisa mais perigosa
+da sala, porque age sobre a própria ilusão sem freio.
+
+Ekman e uma colega passaram anos procurando as raras exceções — pessoas que eles chamavam de "magos" da
+detecção, capazes de acertar bem acima da média. Encontraram pouquíssimas, e mesmo essas são objeto de
+disputa científica. A lição da busca é o oposto da propaganda: se detectar mentira fosse uma habilidade
+que qualquer um instala num curso de fim de semana, não seria preciso vasculhar o país inteiro atrás de
+um punhado de exceções. A regra é a incompetência. O talento é a raríssima exceção, e mesmo ele é modesto.
+
+Isso tem uma consequência que sai do laboratório e entra em delegacias, e destrói vidas. A crença de que
+o corpo denuncia o mentiroso é o motor das **falsas confissões.** Um interrogador convencido de que "sabe"
+que o suspeito mente — porque ele desviou o olhar, porque suou, porque cruzou os braços — pressiona,
+acusa, mente sobre provas que não tem, prolonga o interrogatório por horas, até que um inocente exausto,
+apavorado, convencido de que ninguém vai acreditar nele mesmo, confessa um crime que não cometeu. Existem
+centenas de casos documentados de pessoas condenadas por confissões falsas, muitas depois inocentadas por
+exame de DNA, e no início de boa parte deles está exatamente este erro: um profissional que confiou na
+própria leitura do corpo. O nervoso do inocente interrogado é idêntico ao do culpado. Os dois suam. E
+quem trata o suor como prova está a um passo de fabricar um culpado.
+
+Some a isso o polígrafo, o "detector de mentiras" das séries. Ele não detecta mentira. Detecta excitação
+fisiológica — batimento, respiração, suor — que sobe tanto quando a pessoa mente quanto quando ela tem
+medo de não ser acreditada dizendo a verdade. Por isso o polígrafo é inadmissível como prova em tribunal
+na maior parte do mundo sério: mede a ansiedade, não a honestidade, e as duas não são a mesma coisa. É a
+versão eletrônica do mesmo engano — transformar a agitação do corpo em veredito sobre a alma.
+
 ## Como Jane usa
 
 O método de Jane é sempre o mesmo, e agora você reconhece as duas fases. Primeiro ele conversa
@@ -149,6 +195,37 @@ Apontou onde investigar. A leitura corporal, bem feita, é uma bússola grosseir
 cavar com métodos de verdade — documentos, testemunhas, contradições factuais. Ela nunca é a prova.
 Quem a trata como prova está fazendo o que a televisão faz: transformando probabilidade fraca em
 certeza dramática, e mandando gente inocente para a fogueira porque suou na hora errada.
+
+### O corpo não é universal, e ler mal tem vítima
+
+Há um pressuposto escondido em quase todo curso de linguagem corporal, e ele é falso: a ideia de que o
+corpo fala uma língua única, igual para toda a humanidade. Não fala. Gestos, distância entre corpos,
+contato visual, o quanto se toca ou não se toca ao conversar — tudo isso varia enormemente entre culturas,
+entre regiões, entre famílias. O contato visual firme, que num lugar é sinal de honestidade, em outro é
+desrespeito ou desafio. O aperto de mão, o abraço, a proximidade que um paulistano e um estrangeiro
+consideram "normal" podem estar a meio metro de distância um do outro. Ler o corpo de alguém com a régua
+da sua própria cultura é como ouvir uma língua estrangeira e jurar que entendeu — você projeta o seu
+alfabeto sobre os sons do outro e chama isso de leitura. O baseline, de novo, é a única saída: você só
+lê a pessoa contra ela mesma, nunca contra um manual universal que não existe.
+
+E há um perigo mais grave, que vai além do erro simpático. Muita gente se comporta, de forma
+perfeitamente honesta, de um jeito que os manuais listam como "sinal de mentira". Pessoas autistas ou
+neurodivergentes frequentemente mantêm pouco contato visual, têm expressões faciais que não seguem o
+script esperado, se movem de maneiras que um "leitor de corpo" mal treinado interpreta como evasão ou
+culpa. Pessoas ansiosas suam, gaguejam e desviam o olhar em qualquer interrogatório, culpadas ou não.
+Pessoas tímidas parecem esquivas. Quando um profissional armado com um curso de fim de semana lê esses
+comportamentos como prova de mentira, o resultado não é um palpite errado inofensivo — é um inocente sob
+suspeita, um passageiro revistado, um candidato reprovado, um réu condenado pela forma como o corpo dele
+se comporta em vez de pelos fatos.
+
+Isso não é hipótese. Governos gastaram somas enormes em programas de segurança baseados na ideia de
+treinar agentes para "detectar intenção hostil" pela observação de comportamento em aeroportos —
+programas que, quando auditados, se mostraram sem base científica sólida, incapazes de superar o acaso,
+e propensos a mirar desproporcionalmente quem já era alvo de preconceito. A promessa de ler o inimigo no
+corpo é sedutora para quem precisa de segurança, e é justamente por ser sedutora que engole orçamentos e
+produz injustiça. A lição definitiva do capítulo é modesta e vale repetir: o corpo dá pistas, boas
+pistas, sobre desconforto e emoção. Ele não dá veredito sobre a verdade. Quem transforma pista em
+veredito não está lendo pessoas. Está inventando culpados com uma técnica que se acha ciência.
 
 ## Treino
 

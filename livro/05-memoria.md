@@ -19,6 +19,18 @@ idade, ao alcance de qualquer pessoa disposta a treinar uma tarde. É a técnica
 arsenal, porque não depende de talento nenhum — depende de você aceitar transformar informação seca
 em imagem e lugar. Foi o que Jane fez com a fila. É o que você vai saber fazer no fim deste capítulo.
 
+O detalhe que o detetive nunca entenderia é que Jane não tem uma memória melhor do que a dele. Tem um
+método, e o método faz um trabalho específico: transforma o tipo de informação que o cérebro guarda mal —
+uma sequência de nomes soltos, sons que evaporam em segundos — no tipo de informação que o cérebro guarda
+absurdamente bem — imagens vívidas ancoradas em lugares familiares. A humilhação que o detetive planejou
+se voltou contra ele não porque Jane é um gênio, mas porque Jane conhece um truque de dois mil anos que o
+detetive nunca aprendeu. E essa é a notícia mais libertadora deste capítulo, a que o diferencia de todos
+os outros: enquanto a leitura fria e a influência são poderes que preferimos que os outros não tenham
+sobre nós, a memória é um poder que qualquer pessoa pode instalar em si mesma numa tarde, sem prejudicar
+ninguém. Não há vítima na mnemônica. Há só você e a sua capacidade, subitamente maior do que você
+imaginava. A estante a seguir é curta, prática, e quase toda em inglês — o que é uma pena, porque o que
+ela ensina deveria estar nas mãos de todo estudante brasileiro.
+
 ## A estante
 
 A literatura da memória é pequena, prática e, para o azar do leitor brasileiro, quase toda em inglês.
@@ -89,6 +101,38 @@ que a mente guarda mal — palavras soltas, números, nomes — em informação 
 imagens vívidas, lugares familiares, blocos com sentido. A memória extraordinária não é um cérebro
 maior. É um tradutor melhor.
 
+## Simônides e o rapaz que decorava a lista telefônica
+
+A técnica tem uma certidão de nascimento, e ela é uma tragédia. Conta a tradição — Cícero a registrou —
+que o poeta grego Simônides de Ceos declamava num banquete quando foi chamado para fora do salão. Nesse
+instante, o teto desabou, esmagando todos os convivas de forma tão brutal que os corpos ficaram
+irreconhecíveis, impossíveis de identificar para o enterro. Simônides, então, fechou os olhos e percebeu
+que conseguia lembrar exatamente quem estivera sentado em cada lugar da mesa. Não pelos rostos — não
+havia mais rostos —, mas pela posição. Ele reconstruiu a lista dos mortos caminhando, de memória, pelo
+espaço do salão. Foi ali, segundo a lenda, que nasceu o método de loci: a percepção de que a memória se
+agarra ao lugar com uma força que não tem para nomes soltos. Dois mil e quinhentos anos depois, Jane
+usou a mesma descoberta para devolver os nomes de uma fila de suspeitos. A ferramenta não envelheceu um
+dia.
+
+A ciência moderna confirmou o que o poeta intuiu, e de um jeito espetacular. Nos anos 1970, dois
+pesquisadores pegaram um estudante comum — um rapaz de capacidade de memória perfeitamente mediana, que
+começou conseguindo repetir, como todo mundo, uns sete dígitos ouvidos uma vez. Treinaram-no algumas
+horas por semana, por mais de um ano. O rapaz era corredor, e passou a converter as sequências de
+números em tempos de prova — "três minutos e quarenta e nove, quase recorde nacional" —, um caso puro de
+chunking com significado. Ao fim do treino, repetia cerca de oitenta dígitos ouvidos uma única vez.
+Oitenta. Onze vezes o limite com que começara. E — este é o ponto — a capacidade bruta dele não havia
+mudado nada: tire os números e peça para ele decorar uma sequência de letras, para a qual não tinha
+sistema, e ele voltava aos sete de qualquer um. A memória extraordinária era inteiramente técnica, e
+inteiramente específica. Não era um cérebro melhor. Era um método melhor, aplicado a um material só.
+
+É isso que os campeonatos de memória exibem, e Foer relata por dentro: salões silenciosos cheios de
+gente aparentemente comum decorando baralhos embaralhados em menos de um minuto, sequências de centenas
+de dígitos, dezenas de rostos e nomes. Nenhum deles nasceu com dom. Quase todos, quando entrevistados,
+dizem a mesma coisa entediante — que têm memória normal, que qualquer um faria, que é só treino e
+sistema. É a verdade mais desanimadora e mais libertadora do capítulo: o que parece talento sobre-humano
+é uma técnica antiga, tediosa de treinar, disponível para você numa tarde. A fila de suspeitos aplaudiu
+um dom. Aplaudia, sem saber, o teto que caiu sobre Simônides.
+
 ## Como Jane usa
 
 Jane "lembra de tudo", e as pessoas ao redor tratam isso como dom, quando é método. Ele transformou,
@@ -140,6 +184,38 @@ memórias é vasta e perturbadora: sob a sugestão certa, pessoas passam a lembr
 eventos inteiros da infância que jamais ocorreram. A memória não é um arquivo que você consulta; é uma
 história que você reconta e reescreve a cada consulta. Guarde isso. No capítulo do ceticismo ele volta
 com força, porque muito depoimento sincero — e sinceramente errado — se explica por aqui.
+
+### Decorar não é entender, e o mito dos "estilos de aprendizagem"
+
+Há um limite do palácio da memória que precisa ficar muito claro, porque é onde a técnica mais decepciona
+quem espera dela o que ela não dá: **decorar não é entender.** Você pode pendurar nos cômodos da sua casa
+a lista inteira dos ossos do corpo, as capitais de todos os países, as datas de uma matéria de história —
+e recuperá-las perfeitamente numa prova, sem ter compreendido nada de como o corpo funciona, por que as
+fronteiras estão onde estão, o que ligou um evento histórico ao seguinte. A memorização guarda o quê; ela
+não fabrica o porquê. O conhecimento profundo — aquele que permite raciocinar sobre coisas novas, resolver
+um problema que você nunca viu — não nasce de imagens penduradas em corredores, mas de conexões entre
+ideias, de esforço para explicar, de errar e corrigir. O campeão de memória decora o baralho e não fica
+melhor no pôquer. O estudante que decora sem entender passa na prova e esquece tudo em um mês, porque
+imagens sem compreensão desbotam depressa. A técnica é maravilhosa para o que é: ancorar informação bruta
+que você precisa ter à mão. É inútil como substituto do pensar.
+
+Aliás, já que estamos derrubando ídolos do aprendizado, derrubemos o maior deles: a ideia de que cada
+pessoa tem um "estilo de aprendizagem" — visual, auditivo, cinestésico — e de que você aprende melhor se o
+conteúdo for entregue no seu estilo. É uma das crenças mais difundidas da educação, repetida em escola,
+em treinamento corporativo, em curso de professor. E, quando foi testada a sério, não se sustentou: não há
+evidência boa de que ensinar alguém no seu suposto estilo preferido melhore o aprendizado em relação a
+ensinar de qualquer outro jeito. As pessoas têm preferências, sim; o que elas não têm é um canal
+privilegiado pelo qual o conhecimento entra melhor. É primo direto da PNL do capítulo da influência —
+vocabulário sedutor, base empírica que evaporou no teste.
+
+O que de fato funciona é menos glamouroso e mais chato, e vale mais que qualquer palácio: a **repetição
+espaçada** — revisar o material em intervalos crescentes, deixando quase esquecer antes de reforçar — e o
+**teste ativo** — tentar lembrar sem olhar, o esforço de recuperar em vez de reler passivamente. É o
+oposto do que a maioria faz (reler o resumo dez vezes e se sentir preparado). Lembrar dói, e é o doer que
+grava. O palácio da memória é uma ferramenta específica e brilhante dentro dessa caixa maior; não é a
+caixa. Quem procura o atalho mágico da "memória fotográfica" está fugindo justamente do esforço que
+constrói a memória de verdade. Não há atalho que pule o esforço. Há técnica que torna o esforço mais
+eficiente, e é só isso — e já é muito.
 
 ## Treino
 

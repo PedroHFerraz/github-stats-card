@@ -25,6 +25,18 @@ mais casual do mundo, contou uma história — sobre um amigo que quase investir
 exclusiva, com última vaga, apresentada por um estranho num aeroporto. O executivo empalideceu. O
 golpe morreu ali, sem confronto, sem acusação, morto por reconhecimento. Jane voltou para o seu café.
 
+O que impressiona na cena do aeroporto não é que Jane tenha percebido o golpe — é o quanto ele foi
+invisível para todos os outros. Havia dezenas de pessoas naquela sala, muitas delas espertas, experientes,
+acostumadas a negociar. Nenhuma viu. E não viram justamente porque o golpe bem executado não se parece com
+um golpe: parece uma conversa simpática entre um homem culto e um executivo entediado, sobre uma
+oportunidade que nem estava sendo oferecida. É essa a diferença entre o crime de força e o crime de
+confiança. O assaltante depende de você não poder reagir; o vigarista depende de você não querer reagir,
+de você colaborar, de você agradecer. Por isso a defesa contra o golpe não é ficar mais desconfiado de
+estranhos ameaçadores — o perigo raramente tem cara de ameaça. A defesa é conhecer a coreografia tão bem
+que, quando ela começa a se desenrolar diante de você, com toda a sua simpatia e naturalidade, um alarme
+silencioso dispare: já vi essa dança. A estante a seguir é o mapa dessa coreografia, escrito por quem a
+estudou de fora e por quem a sofreu de dentro.
+
 ## A estante
 
 O golpe de confiança — o *con*, abreviação de *confidence game* — tem uma literatura estranhamente
@@ -93,6 +105,41 @@ roper é o namorado virtual, a marca é a solidão, o convincer são as semanas 
 reais — e eram, é isso que dói. Em todos, o mesmo esqueleto. Depois que você o enxerga, ele fica
 grotescamente óbvio.
 
+## De Ponzi ao Telexfree: o convincer em escala industrial
+
+O golpe mais famoso do mundo leva o nome de um homem, e ele ilustra o convincer melhor do que qualquer
+manual. Nos anos 1920, Charles Ponzi prometeu aos investidores de Boston lucros altíssimos em poucas
+semanas, supostamente vindos de uma arbitragem com selos postais internacionais. O negócio dos selos
+mal existia. O que existia era um mecanismo simples e mortal: o dinheiro dos novos investidores era
+usado para pagar os "lucros" dos antigos. Enquanto entrava gente nova, os antigos recebiam de verdade —
+e esse pagamento real é o convincer perfeito, a isca que paga, a prova concreta que vicia. Os primeiros
+a receber tornavam-se, sem perceber, os melhores ropers do golpe: contavam para amigos, familiares,
+vizinhos, arrastando toda a sua rede de afeto para dentro. Por isso o esquema Ponzi não precisa de um
+vigarista carismático em cada esquina. Ele terceiriza o aliciamento para as próprias vítimas, que
+espalham o veneno de boa-fé, achando que estão fazendo um favor a quem amam. Décadas depois, Bernie
+Madoff rodou a mesma engrenagem por anos, roubando dezenas de bilhões de dólares de gente sofisticada —
+bancos, fundos, investidores profissionais — porque a sofisticação, lembre-se, não protege; ela só
+aumenta o valor da aposta.
+
+O Brasil tem a sua própria galeria, e vale conhecê-la porque o roteiro é sempre o mesmo. As Fazendas
+Reunidas Boi Gordo venderam a milhares de investidores a promessa de engordar bois com retorno garantido
+— e ruíram, deixando um rombo enorme, quando a matemática de pagar os antigos com o dinheiro dos novos
+alcançou o limite de sempre. O Avestruz Master fez o mesmo com aves. E o Telexfree, já na era da
+internet, vestiu o esquema Ponzi de "empresa de telefonia" e "marketing multinível", recrutando uma
+multidão que pagava para entrar e era paga para recrutar os próximos — o roper e a marca fundidos na
+mesma pessoa, cada vítima virando vendedora da própria armadilha. Em todos, o convincer real dos
+primeiros pagamentos; em todos, a rede de confiança usada como sistema de distribuição; em todos, o
+mesmo colapso inevitável quando o fluxo de novos entrantes seca, porque a fonte do dinheiro nunca foi o
+boi, a ave ou o telefone — era sempre o próximo otário.
+
+Repare no que isso faz com a defesa. Se você espera o vigarista elegante do aeroporto, vai ser pego pelo
+esquema que chega pela boca de alguém que você ama e confia, entusiasmado, mostrando o extrato do lucro
+que de fato recebeu. O golpe moderno não parece um golpe. Parece uma oportunidade que o seu cunhado
+descobriu, e da qual ele está genuinamente feliz por poder te incluir. É por isso que a regra da fricção
+— esperar, conferir, calcular de onde exatamente sai o dinheiro do lucro — vale ainda mais quando a
+oferta vem de dentro do seu círculo. Ali a afinidade já está dada, o convincer já foi pago, e a sua
+guarda, por definição, está baixa.
+
 ## Como Jane usa
 
 Este capítulo dobra com o do ceticismo, e a razão é simples: Jane sabe ler o golpe porque foi ele
@@ -138,6 +185,37 @@ mecânica psicológica é a mesma; a escala mudou. Isso importa para a defesa: v
 vigarista elegante do aeroporto com a mesma frequência com que vai encontrar o SMS do falso banco. O
 inimigo real é volumoso e banal, e é justamente por ser banal que baixa a guarda. Ninguém espera que a
 grande trapaça chegue por uma mensagem com erro de português.
+
+### O momento certo, o custo afundado e a vergonha que cala
+
+Konnikova insiste num ponto que muda a forma como você se protege: não existe só a vítima certa, existe o
+**momento certo.** A mesma pessoa que num ano da vida jamais cairia num golpe cai com facilidade em outro,
+não porque ficou mais burra, mas porque a vida a colocou num ponto de fragilidade — um luto, um divórcio,
+a perda do emprego, uma mudança de cidade, a solidão de uma aposentadoria. O vigarista prospera em
+transições, porque é nelas que a pessoa está insegura, buscando sentido, mais disposta a acreditar numa
+mão estendida. Isso derruba de vez a fantasia do "eu nunca cairia": você talvez não caísse hoje, no seu
+melhor dia. O golpe não vai te procurar hoje. Vai te procurar no pior mês da sua vida, quando você estiver
+com menos defesas e mais necessidade — e é para esse você, o vulnerável, que a regra da fricção precisa
+já estar instalada como hábito, porque no meio da fragilidade não dá para inventá-la.
+
+Depois que o golpe começa, entra em cena o mecanismo que mantém a vítima presa mesmo quando as pistas se
+acumulam: o **custo afundado.** Quanto mais alguém já investiu — dinheiro, tempo, afeto, orgulho —, mais
+difícil fica reconhecer que foi enganado, porque reconhecer significa dar todo aquele investimento por
+perdido. Então a vítima faz o oposto do razoável: aposta mais, para "recuperar" o que já perdeu, exatamente
+como o golpista precisa. É por isso que os avisos dos parentes quase nunca funcionam no meio de um golpe —
+quanto mais fundo a pessoa está, mais ela defende o vigarista, porque admitir o erro dói mais a cada real
+enterrado. O custo afundado transforma a vítima na melhor advogada do próprio algoz.
+
+E, quando tudo desaba, opera a peça final, que já vimos com nome técnico e agora vemos como fenômeno
+social: a **vergonha.** A imensa maioria dos golpes nunca é denunciada, e não por falta de leis — é porque
+a vítima prefere engolir o prejuízo a admitir publicamente que foi enganada. O cool-out do vigarista nem
+precisa de muito esforço; a sociedade faz o trabalho por ele, tratando quem cai em golpe como tolo, como
+ganancioso, como "quem mandou". Cada vez que rimos de uma vítima de estelionato, apertamos o parafuso que
+mantém a próxima calada. Por isso a nota mais importante deste capítulo talvez seja de compaixão, não de
+técnica: quem cai em golpe não é burro nem cúmplice. É alguém que foi mirado no ponto certo, no momento
+certo, por um roteiro afiado em milhões de vítimas anteriores. Tratar a vítima com desprezo é terminar o
+serviço do vigarista. Tratá-la com respeito é a única forma de fazer a denúncia — e a defesa coletiva —
+existirem.
 
 ## Treino
 

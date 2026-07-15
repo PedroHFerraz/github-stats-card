@@ -48,6 +48,31 @@ interessante: um cético militante que conhece o truque por dentro, porque foi e
 É a diferença entre o crítico de cinema e o diretor. Jane não desconfia da mágica de fora. Ele
 sabe onde estão os fios porque foi ele quem os amarrou.
 
+Pare um instante nessa fabricação, porque ela é o coração da premissa deste livro. Um mentalista não
+nasce. Ele é montado, peça por peça, a partir de conhecimentos que existem de verdade, espalhados por
+uma prateleira de livros que quase ninguém lê junto. Um pouco de leitura fria, aprendida com os manuais
+dos mágicos. Um pouco de linguagem corporal, emprestada dos psicólogos e dos jogadores de pôquer. As
+alavancas da persuasão, mapeadas por quem se infiltrou em escolas de vendedores. As técnicas de memória
+dos gregos antigos. A anatomia do golpe, catalogada por linguistas que estudaram vigaristas como se
+estuda uma tribo. O ceticismo dos ilusionistas que caçam outros ilusionistas. O raciocínio dos detetives
+de ficção e dos estatísticos de verdade. E, por baixo de tudo, a filosofia antiga que permite a um homem
+carregar esse arsenal sem se despedaçar. Junte esses campos numa só pessoa e você tem um Patrick Jane.
+Separe-os de novo, campo por campo, livro por livro, e você tem este livro — a engenharia reversa de um
+personagem, feita não para explicar a série, mas para colocar cada uma dessas habilidades reais nas suas
+mãos.
+
+E há uma razão de este livro existir em português, especificamente. Boa parte dessa prateleira nunca foi
+publicada no Brasil. Os manuais de leitura fria, os tratados de mentalismo, o livro-mãe sobre golpes, a
+obra que caça as fraudes paranormais — tudo isso só existe em inglês, trancado atrás de uma língua que
+nem todo leitor domina. É uma biblioteca invisível para quem não lê inglês, e é justamente essa
+invisibilidade que este livro quer romper. Quando existir edição brasileira de uma obra, eu digo a
+editora e mando você ler. Quando não existir — e é o caso da maioria —, eu faço a ponte: explico a ideia
+em português, com meus próprios exemplos, e te entrego o vocabulário técnico da área em inglês, traduzido
+e mastigado, para que você possa seguir sozinho depois. É por isso que, ao longo dos capítulos, você vai
+encontrar termos como *cold reading*, *baseline*, *the out* sempre com uma tradução ao lado na primeira
+vez: não é afetação, é a chave da porta. O leitor precisa sair daqui sabendo falar um pouco a língua de
+cada campo, ou a ponte não terá sido construída.
+
 ## O que este livro é, e o que ele não é
 
 Este é um manual. Um manual honesto, o que significa que metade dele existe para desmontar a outra

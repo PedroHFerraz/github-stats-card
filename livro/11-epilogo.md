@@ -24,6 +24,25 @@ de chá na mão, deixando a fraude se revelar no seu próprio tempo. A dedução
 paciente de atualizar a hipótese em vez de se apaixonar por ela. E o estoicismo, o capítulo inteiro, é
 uma tecnologia da espera — não reagir no calor, deixar a raiva quente esfriar, escolher a hora.
 
+Há uma simetria bonita nisso que vale notar, agora que chegamos ao fim. O livro começou num trailer de
+parque de diversões, com um menino aprendendo a ler estranhos para tirar deles alguma coisa — a moeda, a
+fé, o consolo pago. E termina numa cozinha vazia, com um homem que aprendeu a mesma leitura para não ser
+mais tirado, e para proteger quem ainda pode ser. É o mesmo par de olhos, a mesma atenção afiada; o que
+mudou foi para onde ela aponta. No começo, a atenção era uma arma de saque. No fim, é um escudo. Essa é a
+viagem inteira do personagem e, se este livro funcionou, é também um pouco da sua: você entrou querendo
+aprender a ler as pessoas e sai sabendo, sobretudo, como as pessoas são lidas — o que é a única leitura
+que realmente protege.
+
+E preciso desfazer, aqui no fim, um mal-entendido possível. Alguém poderia ler estas páginas e concluir
+que a lição é desconfiar de todo mundo, andar pela vida com o kit de detecção de baboseira apontado para
+cada rosto, tratar cada gentileza como uma alavanca e cada estranho como um roper. Não é isso, e seria um
+fracasso do livro se fosse. A paciência e a atenção que Jane cultiva não servem para ele amar menos as
+pessoas — servem para ele não ser destruído por quem quer explorá-las. O objetivo nunca foi a paranoia. É
+a serenidade de quem sabe o nome do truque e por isso pode, finalmente, baixar a guarda diante de quem não
+está aplicando truque nenhum. Reconhecer a manipulação é o que permite confiar sem medo no resto — porque
+você passou a saber a diferença. O cínico desconfia de todos e não protege ninguém. O atento reconhece a
+armadilha específica e, livre dela, pode ser generoso com o mundo inteiro.
+
 Tudo neste livro é, no fundo, a mesma coisa vista de nove ângulos: prestar mais atenção do que o outro,
 e esperar mais do que o outro. Essa é a habilidade-mãe, a que gera todas as filhas. E é a mais
 subestimada de todas, porque não parece uma habilidade. Não tem nome bonito em inglês, não impressiona

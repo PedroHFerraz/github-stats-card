@@ -28,6 +28,18 @@ sentir competente, a frase plantada sobre arquivos que não morrem. Jane não co
 nada. Ele arrumou a sala para que o delegado se convencesse sozinho, e saísse achando que a ideia
 tinha nascido dentro dele. Essa é a arte da influência, e ela tem engenheiros sérios.
 
+O que torna o episódio do delegado interessante não é a esperteza de Jane — é o fato de que nada ali foi
+mentira. O café era um café. A admiração pelo caso antigo era genuína; o caso tinha sido bem resolvido. A
+frase sobre arquivos que não morrem era verdadeira. Cada peça, isolada, era honesta, e mesmo assim o
+conjunto foi inteiramente construído para produzir um resultado que o delegado jamais teria escolhido se
+lhe pedissem diretamente. É aqui que mora a parte incômoda da influência, e a razão de este ser o capítulo
+que mais precisa da nota ética no fim do livro: as ferramentas mais poderosas de persuasão não dependem de
+enganar. Dependem de arrumar a ordem das verdades, de escolher o momento, de deixar o outro chegar sozinho
+onde você quer. Isso é o que faz o bom professor, o bom terapeuta, o bom amigo — e também o golpista de
+alta classe. A técnica é a mesma; o que muda é se a pessoa, sabendo de tudo, ainda assim ficaria feliz com
+o resultado. Segure essa pergunta, porque ela é a bússola moral deste capítulo inteiro, e a estante a
+seguir vai te dar as alavancas sem, por si só, te dizer para que lado apontá-las.
+
 ## A estante
 
 O engenheiro-chefe se chama **Robert Cialdini**, psicólogo social que fez uma coisa rara: passou anos
@@ -111,6 +123,46 @@ ambiguidades que a pessoa resolve sozinha na direção que você quer. Não é c
 direção de foco. É o que um bom professor, um bom terapeuta e, sim, um bom manipulador fazem — e a
 diferença entre os três está no propósito, nunca na técnica.
 
+## O que os experimentos realmente mostraram
+
+Nada disso é opinião de guru. As alavancas de Cialdini têm, por trás, décadas de experimentos, e vale
+conhecer os clássicos, porque conhecê-los é a diferença entre desconfiar de manipulação por instinto e
+saber o nome exato do que estão fazendo com você.
+
+A prova social foi medida por Solomon Asch nos anos 1950 com um teste ridículo de simples: mostrava-se a
+um grupo três linhas de tamanhos óbvios e perguntava-se qual era igual a uma quarta. A resposta era
+evidente. Mas os outros participantes — todos atores combinados com o pesquisador — davam, em uníssono,
+a resposta errada. E uma proporção enorme das pessoas reais, diante da certeza da maioria, negava os
+próprios olhos e repetia o erro do grupo. Não porque não enxergavam a linha certa. Porque discordar de
+todo mundo é fisicamente desconfortável. A fila na porta do restaurante, o "mais vendido", o "dez mil
+clientes satisfeitos" — todos puxam essa mesma alavanca que Asch mediu: a dor de estar sozinho contra a
+multidão, mesmo quando a multidão está errada.
+
+A autoridade foi medida por Stanley Milgram, no experimento mais perturbador da história da psicologia.
+Pessoas comuns, instruídas por um homem de jaleco a aplicar choques elétricos crescentes em outra pessoa
+— na verdade um ator, que gritava e implorava —, continuavam a apertar o botão, muitas até o fim, só
+porque uma figura de autoridade dizia, com calma, "o experimento exige que você continue". Não eram
+sádicos. Eram gente normal, obedecendo a um jaleco. Milgram mostrou que a autoridade não precisa de
+força; precisa apenas de aparência de legitimidade, e a maioria de nós a obedece muito além do que
+gostaria de admitir. Guarde isso quando o próximo golpista se apresentar como "do banco", "da polícia",
+"do cartório".
+
+E o compromisso foi medido por dois pesquisadores, Freedman e Fraser, com o que ficou conhecido como
+"pé na porta". Pediram a moradores que colocassem no jardim uma placa enorme e feia de campanha de
+segurança no trânsito — quase todos recusaram. Mas, com outro grupo, primeiro fizeram um pedido
+minúsculo: só colar um adesivo pequenininho na janela. Semanas depois, voltaram com o pedido da placa
+gigante — e agora a maioria aceitou. O adesivo tinha transformado a pessoa, aos próprios olhos, em
+"alguém que apoia essa causa", e recusar a placa contradiria a imagem que ela agora tinha de si. É o
+motor do "só assine aqui para receber informações" que vira, meses depois, o contrato. O primeiro passo
+pequeno não é pequeno. É a fundação do compromisso grande.
+
+No Brasil, você reconhece as alavancas em roupa local. O consórcio que te liga dizendo que "abriu uma
+vaga contemplada, mas só até o fim do dia" empilha escassez e urgência de uma vez. O financiamento
+aprovado "só hoje com esta taxa" desliga a sua conta de padaria pela pressa. O vendedor que descobre,
+encantado, que torce para o seu time antes de fechar negócio está comprando afinidade a preço de
+conversa. Nenhuma dessas alavancas é mágica, e é justamente por não serem mágica que funcionam sem que
+você perceba: elas operam sobre reflexos que a evolução instalou em você muito antes de existir vendedor.
+
 ## Como Jane usa
 
 Jane nunca convence ninguém, e essa é a chave de tudo. Convencer é empurrar; deixa marca, gera
@@ -170,6 +222,38 @@ atenção, e ela funciona melhor exatamente com quem coopera — com quem já qu
 comprar, já quer acreditar. O palco do hipnotizador seleciona voluntários sugestionáveis e dispostos;
 o resto da plateia assiste imune. Trate qualquer um que prometa "hipnotizar sem você perceber para
 fazer o que eu quiser" como você trata o médium: com a xícara de chá na mão e a sobrancelha erguida.
+
+### Quando a influência vira abuso, e quando ela fracassa
+
+Há uma linha, e este livro inteiro existe para você aprender a enxergá-la: a linha entre influência e
+manipulação. Ela não está na técnica — a mesma reciprocidade que constrói uma amizade vende um
+consórcio, a mesma prova social que te leva a um bom restaurante te empurra uma pirâmide. A linha está em
+duas perguntas. Primeira: a informação é verdadeira ou fabricada? A escassez real ("são as últimas duas
+unidades mesmo") informa; a escassez inventada ("só restam duas vagas", quando há cinquenta) mente.
+Segunda: a decisão serve a você ou só a quem te influencia? O bom professor usa as alavancas para você
+aprender; o golpista usa as mesmas alavancas para você pagar. Quando a técnica esconde informação e serve
+só a quem a aplica, deixou de ser influência e virou abuso — e ter o nome da alavanca na ponta da língua
+é o que te permite fazer essas duas perguntas no calor do momento, antes de assinar.
+
+Essa fronteira ficou mais urgente na era das telas, porque a persuasão foi automatizada. Aquilo que o
+vendedor fazia com o corpo, o aplicativo faz com o design: o botão de comprar grande e verde, o de
+cancelar minúsculo e cinza; a contagem regressiva falsa; o "sete pessoas estão vendo este hotel agora";
+a assinatura fácil de começar e desenhada para ser difícil de cancelar. São as alavancas de Cialdini
+transformadas em interface, aplicadas a milhões de pessoas ao mesmo tempo, testadas e otimizadas para
+furar exatamente as suas defesas. O vendedor cansava; o código não cansa. Reconhecer a escassez fabricada
+numa tela é a versão moderna e diária de reconhecer o médium — e é uma defesa que você vai usar mais
+vezes hoje do que gostaria.
+
+Mas — e esta é a boa notícia que equilibra o capítulo — a influência não é um controle remoto. Existe um
+fenômeno bem conhecido chamado reatância: quando as pessoas percebem que estão sendo empurradas,
+frequentemente reagem no sentido contrário, só para reafirmar a própria autonomia. Persuasão pesada
+demais cria resistência; o "compre agora ou perca" grosseiro faz muita gente fechar a aba de propósito.
+Isso importa por dois motivos. Primeiro, porque desmonta a fantasia paranoica de que somos marionetes
+indefesas — não somos; temos defesas, e a principal delas é justamente a percepção de que estão puxando
+uma alavanca. Segundo, porque explica por que a manipulação mais eficaz é sempre a mais invisível: ela
+não te empurra, ela arruma a sala para que você caminhe sozinho na direção que ela quer, achando que a
+ideia foi sua — exatamente o que Jane fez com o delegado. A influência que você sente é fraca. A que
+funciona é a que você não percebe. Por isso o trabalho todo, aqui, é aprender a percebê-la.
 
 ## Treino
 

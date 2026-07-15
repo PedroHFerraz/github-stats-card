@@ -23,6 +23,19 @@ convencido do mais velho, teria encontrado provas para o mais velho com a mesma 
 enxerga o que já espera ver. Descobrir a verdade exigiu, antes, descobrir a própria tendência a
 confirmá-la.
 
+Note a diferença entre o que Jane fez com os irmãos e o que Sherlock Holmes faria. Holmes olharia os
+punhos das camisas, o calo de um dedo, a lama de um sapato, e anunciaria a solução completa num relâmpago,
+com a segurança de quem nunca erra. Jane fez o contrário do relâmpago: partiu de um palpite qualquer,
+provisório, e o foi corrigindo devagar, disposto a abandoná-lo à primeira evidência contrária — e, mais
+raro ainda, disposto a desconfiar da própria vontade de encontrar um culpado específico. A genialidade de
+Holmes é uma fantasia deliciosa; o método de Jane é uma disciplina modesta e chata que qualquer pessoa
+pode praticar. E é justamente a fantasia de Holmes que atrapalha mais gente na vida real, porque ela nos
+convence de que pensar bem é saltar para a resposta certa com confiança, quando pensar bem é quase o
+oposto: é segurar várias respostas ao mesmo tempo, desconfiar da que você prefere, e mover-se em
+probabilidades em vez de certezas. Este capítulo é sobre essa troca — trocar o brilho da dedução mágica
+pela solidez do raciocínio que sabe o quanto não sabe. A estante a seguir tem os dois detetives que
+nunca existiram e a psicóloga que explica por que um deles funciona só na página.
+
 ## A estante
 
 Esta é a estante mais literária do arsenal, e a mais barata para o leitor brasileiro, porque boa
@@ -97,6 +110,36 @@ a partida, poderia falhar? Para entender um boato que corre na família, você i
 espalhou — que necessidade, que mágoa, que medo aquela história atende? Habitar a perspectiva alheia é
 uma máquina de gerar hipóteses melhores, e hipóteses melhores são metade do raciocínio.
 
+## O exame que dá positivo e o cartão que diz "vogal"
+
+Deixe-me te mostrar duas coisas pequenas que mudam a maneira de pensar, porque o raciocínio bayesiano
+soa abstrato até você senti-lo na pele com números.
+
+Imagine uma doença que atinge uma pessoa em mil. Existe um exame para ela, muito bom: quando a pessoa
+tem a doença, ele acerta em quase todos os casos, e quando a pessoa não tem, ele erra — dá um falso
+positivo — em apenas 5% das vezes. Cinco por cento parece pouco. Você faz o exame, dá positivo. Qual a
+chance de você estar realmente doente? A intuição grita "95%!". A intuição está redondamente errada.
+Pense na cidade inteira: em cem mil pessoas, cem têm a doença e o exame as pega; mas das 99.900 saudáveis,
+5% dão falso positivo — quase cinco mil pessoas. Ou seja, para cada verdadeiro doente detectado, há
+dezenas de saudáveis com o mesmo positivo assustador. A sua chance real de estar doente, mesmo com o
+exame positivo, é de uns poucos por cento. O que a intuição ignorou foi a probabilidade de partida, o
+*prior* — o fato de a doença ser rara. É o mesmo erro do profiling que descreve meia cidade, é o mesmo
+erro do detalhe raro que "aponta" um culpado: esquecer quantas pessoas existem no ponto de partida. O
+bayesiano não esquece. Ele sempre pergunta: partindo de quê?
+
+A segunda coisa é um cartão. O psicólogo Peter Wason montou um teste tão simples que parece pegadinha e
+tão revelador que virou clássico. Ele dava às pessoas a sequência 2, 4, 6 e dizia: existe uma regra que
+esta sequência obedece; proponham outras sequências e eu digo se elas obedecem ou não, até vocês
+descobrirem a regra. Quase todo mundo pensava "a regra é números pares subindo de dois em dois" e
+passava a testar apenas sequências que confirmavam esse palpite — 8, 10, 12; 20, 22, 24 — recebendo
+sempre um "sim" e ficando cada vez mais convencido. Mas a regra verdadeira era só "três números
+crescentes". Qualquer coisa como 1, 2, 3 daria "sim" e teria estourado o palpite. As pessoas erravam não
+por burrice, mas porque só faziam perguntas que confirmavam a própria hipótese, nunca perguntas que a
+matariam. Esse é o viés de confirmação nu, medido num cartão: a mente humana testa para confirmar, não
+para refutar. E o bom raciocínio exige o contrário — exige que você procure ativamente a sequência que
+provaria você errado. Quem só pergunta "isto confirma o que eu acho?" vai passar a vida recebendo "sim"
+e nunca descobrir a regra de verdade.
+
 ## Como Jane usa
 
 Jane é um bayesiano intuitivo. Ele não faz contas de probabilidade na cabeça — ninguém faz —, mas
@@ -145,6 +188,38 @@ memória — a mesma plasticidade que vimos no capítulo da memória — e você
 uma pessoa que acertou por sorte algumas vezes, esqueceu os erros, e agora acredita, sinceramente, ter
 um dom dedutivo. A "dedução infalível" é quase sempre memória seletiva vestida de método. O bom
 raciocínio não é o que acerta sempre. É o que erra menos, sabe que erra, e conserta rápido.
+
+### Quando confiar na intuição, e quando não
+
+Depois de tanto atacar a "dedução" mágica, é justo fazer a pergunta oposta: então a intuição não presta
+nunca? Presta, sim — em certas condições, e é importante saber quais, porque a resposta é útil todos os
+dias. A pesquisa sobre isso convergiu para uma regra clara. A intuição de um especialista é confiável
+quando duas coisas acontecem juntas: primeiro, o campo é regular o bastante para ter padrões reais a
+aprender; segundo, a pessoa recebeu, ao longo de muita prática, retorno rápido e claro sobre seus acertos
+e erros. O bombeiro veterano que "sente" que o assoalho vai ceder, o médico experiente que bate o olho e
+desconfia de um diagnóstico, o enxadrista que vê o lance certo num relance — todos operam uma intuição
+treinada em ambientes que devolvem feedback honesto, partida após partida, incêndio após incêndio. Ali, a
+sensação de saber sem saber por quê é conhecimento comprimido, e merece respeito.
+
+Mas troque as condições e a mesma intuição vira ilusão. Onde o ambiente é irregular, ruidoso, imprevisível
+— o mercado de ações, a previsão de qual casamento vai durar, o palpite sobre qual criminoso cometeu qual
+crime —, não há padrão estável para aprender, e o retorno chega tarde, raro ou distorcido. Nesses campos,
+o "especialista" intuitivo não supera fórmulas simples nem, às vezes, o acaso, embora sinta exatamente a
+mesma confiança do bombeiro. Essa é a armadilha: a confiança que acompanha a intuição não distingue entre
+a intuição válida e a falsa. As duas se sentem iguais por dentro. Holmes se sente igualzinho quando acerta
+o soldado afegão e quando erraria o pedreiro — a sensação de certeza não sabe se o ambiente merece ser
+confiado. Por isso a pergunta a fazer nunca é "quão seguro eu me sinto?", e sim "este é um campo que
+ensina, e eu tive prática com retorno de verdade nele?".
+
+Sobra a virtude que amarra o capítulo inteiro: a **calibração**, saber o tamanho da própria incerteza. A
+pessoa bem calibrada não é a que acerta sempre — é a que, quando diz "tenho 70% de certeza", está de fato
+certa em torno de 70% das vezes, e sabe quando está no terreno do palpite. A maioria de nós é mal
+calibrada para o lado da arrogância: dizemos "tenho certeza" e erramos com frequência constrangedora,
+sobretudo nas coisas em que somos especialistas, porque a especialidade incha a confiança mais rápido do
+que a acurácia. Pensar em probabilidades, escrever a hipótese antes, contar os próprios erros, procurar a
+evidência que te contraria — tudo o que este capítulo pediu — é, no fundo, um treino de calibração. Não
+te torna um Holmes infalível. Te torna uma coisa melhor e mais rara: alguém que sabe o quanto sabe, e o
+quanto não sabe. Na vida real, esse é o superpoder. O outro é ficção.
 
 ## Treino
 

@@ -24,6 +24,18 @@ Ele não a humilhou. Não precisou. A recusa em ser lido já era o desmascaramen
 olhasse com atenção, veria que não havia triunfo no rosto dele. Havia reconhecimento. Ele estava
 olhando para a própria juventude do outro lado da mesa.
 
+Esse olhar de reconhecimento, e não de triunfo, é a chave do capítulo inteiro. Existe um ceticismo que é
+esporte — o prazer de humilhar o crédulo, de provar que se é mais inteligente que a plateia. Não é esse o
+ceticismo de Jane, e não é o que este livro defende. O ceticismo que interessa não olha de cima para quem
+acredita; olha com uma espécie de compaixão cansada, porque sabe o que está sendo vendido àquelas pessoas,
+e por quanto, e sabe que quem compra só queria falar com um morto ou curar um filho. Jane desmonta a
+médium não para se sentir superior a ela, mas porque cada médium em ação está fazendo, naquele instante, o
+que ele mesmo fez — e desmontá-los é a única forma de penitência que lhe resta. É por isso que este é o
+capítulo mais pessoal do arsenal, e por isso o ceticismo aqui não é frieza, é o contrário dela: é o que
+sobra de um homem que amou o truque, viveu do truque, e descobriu tarde demais o preço que outras pessoas
+pagaram por ele. A estante a seguir foi escrita, quase toda, por gente que sentiu exatamente essa mistura
+de fascínio e culpa: mágicos que caçam mágicos.
+
 ## A estante
 
 O ceticismo tem uma tradição de guerra, e seus melhores soldados vêm de onde menos se espera: da
@@ -96,6 +108,42 @@ seletiva. Um cientista brilhante, sem treino em ilusionismo, é uma marca perfei
 erro nos lugares errados. Foi por isso que Randi mandou mágicos, não físicos, para desmascarar os
 laboratórios. Contra um trapaceiro, você precisa de alguém que pense como trapaceiro.
 
+## O Projeto Alfa, e a colher que dobrou o mundo
+
+James Randi não gostava de discutir com crentes. Preferia demonstrar. E a demonstração mais brilhante da
+carreira dele, o chamado Projeto Alfa, é a prova viva de por que o cientista sozinho não basta.
+
+No início dos anos 1980, um laboratório de pesquisa em fenômenos paranormais recebeu financiamento para
+testar poderes psíquicos. Randi enviou, secretamente, duas armas: dois jovens mágicos amadores — um
+deles o mesmo Banachek que aparece na Parte 1 —, instruídos a se apresentarem como sujeitos de
+verdadeiros poderes. Os rapazes entortaram colheres, moveram objetos, embaçaram filmes lacrados, tudo
+com truques de palco banais que qualquer mágico reconheceria. Os pesquisadores, sinceramente
+convencidos, anunciaram ter encontrado talentos genuínos. Por anos. Randi havia, inclusive, entregado de
+antemão aos cientistas uma lista de precauções simples que impediriam qualquer trapaça — e eles a
+ignoraram, porque queriam acreditar. Quando a fraude foi revelada, a lição não era que os cientistas
+eram tolos. Era que a boa-fé científica é indefesa contra alguém que engana de propósito, porque o
+método científico foi construído para investigar uma natureza que não trapaceia. O elétron não esconde
+a colher na manga. O ser humano, sim.
+
+O caso irmão é o do entortador de colheres mais famoso do mundo, que construiu fama internacional
+dobrando talheres e parando relógios "com a mente". Convidado a um programa de televisão americano, foi
+recebido por Randi, que — sem tocar em nada, apenas exigindo que os próprios objetos e colheres fossem
+fornecidos pela produção, e não pelo artista — assistiu ao suposto psíquico não conseguir fazer
+absolutamente nada, ao vivo, diante de milhões, alegando não estar "se sentindo forte naquela noite". A
+frase é o retrato da falseabilidade fraudada: o poder que só funciona quando o próprio dono controla as
+condições, e que "não vem" justamente quando um mágico controla a mesa, não é poder nenhum. É um truque
+sem os seus adereços.
+
+O Brasil tem a sua versão dessa mesma engenharia na longa tradição da cirurgia psíquica — os "médiuns"
+que fingem operar corpos com as mãos ou com instrumentos sem anestesia, extraindo "tumores" que, quando
+examinados, se revelam vísceras de animais ou algodão ensanguentado. O truque é de palco, o mesmo
+sleight-of-hand que um mágico usa para fazer sumir uma moeda, aplicado sobre a esperança desesperada de
+quem tem uma doença grave e recebeu do médico a pior notícia. E é aí que a coisa deixa de ser
+entretenimento e vira crime, porque a marca não é uma plateia divertida: é um doente que às vezes
+abandona o tratamento real confiando na colher que dobrou. O ceticismo, neste ponto, para de ser um
+esporte e vira o que Sagan sempre disse que era — um ato de defesa das pessoas contra quem lucra com o
+que elas têm de mais frágil.
+
 ## Como Jane usa
 
 Este é o capítulo mais pessoal do arsenal, e a razão é uma só: Jane já foi o vigarista. Ele não é
@@ -144,6 +192,36 @@ crença contra qualquer correção. Reconhecer a diferença é vital, porque o c
 se apresenta como místico. Ele se apresenta como o "verdadeiro cético", o que "questiona o sistema", e
 usa o vocabulário de Sagan para vender exatamente a baboseira que Sagan passou a vida combatendo. O kit
 tem que se voltar também contra quem diz estar usando o kit.
+
+### O cético também mente para si mesmo
+
+Falta a parte mais desconfortável, e é a que separa o cético de verdade do torcedor disfarçado de cético:
+**a mesma máquina de autoengano que faz o crente acreditar faz você acreditar no que você já quer
+acreditar.** O viés de confirmação não tem lado. Ele não age só na cabeça do fã de horóscopo; age na sua,
+quando você procura, encontra e compartilha só as evidências que dão razão à sua opinião política, ao seu
+time, à sua visão de mundo, e descarta o resto como propaganda. O raciocínio motivado — pensar para chegar
+à conclusão que você já queria, e não para descobrir qual é a verdadeira — é uma competência que a
+inteligência até piora, porque gente inteligente constrói justificativas mais elaboradas para o que já
+sentia. O cético que aplica o kit de detecção de baboseira nas crenças alheias e nunca nas próprias não é
+um cético. É um crente com melhor vocabulário.
+
+Some a isso a era em que vivemos, feita sob medida para alimentar esse defeito. As redes não te mostram o
+mundo; mostram o que te mantém rolando a tela, o que quase sempre é aquilo que confirma o que você já acha
+e te dá a satisfação de detestar quem discorda. Você termina cercado de gente que pensa igual, cada
+concordância parecendo mais uma "prova", e a sensação de estar obviamente certo cresce na exata medida em
+que você para de encontrar quem te contradiga. É a máquina de Forer em escala planetária: em vez de uma
+frase larga que serve para todos, um mundo estreito costurado só para você, que sente como realidade
+objetiva o que é apenas o seu próprio reflexo devolvido mil vezes. O pseudocético floresce aí,
+confundindo "todo mundo que eu sigo concorda comigo" com "eu investiguei e conclui".
+
+Por isso o ceticismo honesto é, antes de tudo, um trabalho contra si mesmo, e é um trabalho que nunca
+termina. Ele exige a disciplina rara de procurar ativamente o melhor argumento do outro lado, de dar a
+mão à palmatória quando a evidência contraria o que você preferia, de dizer "não sei" e "mudei de ideia"
+sem sentir que perdeu. Sagan chamava isso de equilíbrio entre duas necessidades em tensão: a abertura
+para considerar ideias novas, por mais estranhas, e o rigor implacável para examiná-las — inclusive, e
+principalmente, as suas. Um cético que só duvida dos outros está usando a dúvida como arma; um cético que
+duvida de si está usando a dúvida como método. A diferença entre os dois é a diferença entre ganhar
+discussões e encontrar a verdade, e são coisas que quase nunca andam juntas.
 
 ## Treino
 
